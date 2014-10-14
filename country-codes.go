@@ -61,10 +61,21 @@ type CountryCode struct {
 	assignment Assignment
 }
 
-var alpha2 map[string]CountryCode
+var by_alpha2 map[string]CountryCode
+
+var by_name map[string]CountryCode
+
+var by_alpha3 map[string]CountryCode
+
+var by_numeric map[int]CountryCode
 
 func init() {
-	alpha2 = map[string]CountryCode{
+
+	by_name = make(map[string]CountryCode)
+	by_alpha3 = make(map[string]CountryCode)
+	by_numeric = make(map[int]CountryCode)
+
+	by_alpha2 = map[string]CountryCode{
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Ascension_Island">Ascension Island</a>
 		 * [<a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#AC">AC</a>, ASC, -1,
@@ -3559,5 +3570,13 @@ func init() {
 			numeric:    716,
 			assignment: OFFICIALLY_ASSIGNED,
 		},
+	}
+
+	for _, cc := range by_alpha2 {
+		if cc.alpha3 != "" {
+			by_alpha3[cc.alpha3] = cc
+		}
+		by_name[cc.name] = cc
+		by_numeric[cc.numeric] = cc
 	}
 }
