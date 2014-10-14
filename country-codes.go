@@ -58,11 +58,11 @@ const (
 )
 
 type CountryCode struct {
-	name       string
-	alpha2     string
-	alpha3     string
-	numeric    int
-	assignment Assignment
+	Name       string
+	Alpha2     string
+	Alpha3     string
+	Numeric    int
+	Assignment Assignment
 }
 
 var by_alpha2 map[string]CountryCode
@@ -89,11 +89,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"AC": CountryCode{
-			name:       "Ascension Island",
-			alpha2:     "AC",
-			alpha3:     "ASC",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Ascension Island",
+			Alpha2:     "AC",
+			Alpha3:     "ASC",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -102,11 +102,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AD": CountryCode{
-			name:       "Andorra",
-			alpha2:     "AD",
-			alpha3:     "AND",
-			numeric:    20,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Andorra",
+			Alpha2:     "AD",
+			Alpha3:     "AND",
+			Numeric:    20,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -115,11 +115,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AE": CountryCode{
-			name:       "United Arab Emirates",
-			alpha2:     "AE",
-			alpha3:     "ARE",
-			numeric:    784,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "United Arab Emirates",
+			Alpha2:     "AE",
+			Alpha3:     "ARE",
+			Numeric:    784,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -128,11 +128,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AF": CountryCode{
-			name:       "Afghanistan",
-			alpha2:     "AF",
-			alpha3:     "AFG",
-			numeric:    4,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Afghanistan",
+			Alpha2:     "AF",
+			Alpha3:     "AFG",
+			Numeric:    4,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -141,11 +141,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AG": CountryCode{
-			name:       "Antigua and Barbuda",
-			alpha2:     "AG",
-			alpha3:     "ATG",
-			numeric:    28,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Antigua and Barbuda",
+			Alpha2:     "AG",
+			Alpha3:     "ATG",
+			Numeric:    28,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -154,11 +154,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AI": CountryCode{
-			name:       "Anguilla",
-			alpha2:     "AI",
-			alpha3:     "AIA",
-			numeric:    660,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Anguilla",
+			Alpha2:     "AI",
+			Alpha3:     "AIA",
+			Numeric:    660,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -167,11 +167,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AL": CountryCode{
-			name:       "Albania",
-			alpha2:     "AL",
-			alpha3:     "ALB",
-			numeric:    8,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Albania",
+			Alpha2:     "AL",
+			Alpha3:     "ALB",
+			Numeric:    8,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -180,11 +180,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AM": CountryCode{
-			name:       "Armenia",
-			alpha2:     "AM",
-			alpha3:     "ARM",
-			numeric:    51,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Armenia",
+			Alpha2:     "AM",
+			Alpha3:     "ARM",
+			Numeric:    51,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -193,11 +193,11 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"AN": CountryCode{
-			name:       "Netherlands Antilles",
-			alpha2:     "AN",
-			alpha3:     "ANHH",
-			numeric:    530,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Netherlands Antilles",
+			Alpha2:     "AN",
+			Alpha3:     "ANHH",
+			Numeric:    530,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -206,11 +206,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AO": CountryCode{
-			name:       "Angola",
-			alpha2:     "AO",
-			alpha3:     "AGO",
-			numeric:    24,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Angola",
+			Alpha2:     "AO",
+			Alpha3:     "AGO",
+			Numeric:    24,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -219,11 +219,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AQ": CountryCode{
-			name:       "Antarctica",
-			alpha2:     "AQ",
-			alpha3:     "ATA",
-			numeric:    10,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Antarctica",
+			Alpha2:     "AQ",
+			Alpha3:     "ATA",
+			Numeric:    10,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -232,11 +232,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AR": CountryCode{
-			name:       "Argentina",
-			alpha2:     "AR",
-			alpha3:     "ARG",
-			numeric:    32,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Argentina",
+			Alpha2:     "AR",
+			Alpha3:     "ARG",
+			Numeric:    32,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -245,11 +245,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AS": CountryCode{
-			name:       "American Samoa",
-			alpha2:     "AS",
-			alpha3:     "ASM",
-			numeric:    16,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "American Samoa",
+			Alpha2:     "AS",
+			Alpha3:     "ASM",
+			Numeric:    16,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -258,11 +258,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AT": CountryCode{
-			name:       "Austria",
-			alpha2:     "AT",
-			alpha3:     "AUT",
-			numeric:    40,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Austria",
+			Alpha2:     "AT",
+			Alpha3:     "AUT",
+			Numeric:    40,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -271,11 +271,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AU": CountryCode{
-			name:       "Australia",
-			alpha2:     "AU",
-			alpha3:     "AUS",
-			numeric:    36,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Australia",
+			Alpha2:     "AU",
+			Alpha3:     "AUS",
+			Numeric:    36,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -284,11 +284,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AW": CountryCode{
-			name:       "Aruba",
-			alpha2:     "AW",
-			alpha3:     "ABW",
-			numeric:    533,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Aruba",
+			Alpha2:     "AW",
+			Alpha3:     "ABW",
+			Numeric:    533,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -297,11 +297,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AX": CountryCode{
-			name:       "\u212Bland Islands",
-			alpha2:     "AX",
-			alpha3:     "ALA",
-			numeric:    248,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "\u212Bland Islands",
+			Alpha2:     "AX",
+			Alpha3:     "ALA",
+			Numeric:    248,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -310,11 +310,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AZ": CountryCode{
-			name:       "Azerbaijan",
-			alpha2:     "AZ",
-			alpha3:     "AZE",
-			numeric:    31,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Azerbaijan",
+			Alpha2:     "AZ",
+			Alpha3:     "AZE",
+			Numeric:    31,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -323,11 +323,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BA": CountryCode{
-			name:       "Bosnia and Herzegovina",
-			alpha2:     "BA",
-			alpha3:     "BIH",
-			numeric:    70,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bosnia and Herzegovina",
+			Alpha2:     "BA",
+			Alpha3:     "BIH",
+			Numeric:    70,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -336,11 +336,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BB": CountryCode{
-			name:       "Barbados",
-			alpha2:     "BB",
-			alpha3:     "BRB",
-			numeric:    52,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Barbados",
+			Alpha2:     "BB",
+			Alpha3:     "BRB",
+			Numeric:    52,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -349,11 +349,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BD": CountryCode{
-			name:       "Bangladesh",
-			alpha2:     "BD",
-			alpha3:     "BGD",
-			numeric:    50,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bangladesh",
+			Alpha2:     "BD",
+			Alpha3:     "BGD",
+			Numeric:    50,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -362,11 +362,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BE": CountryCode{
-			name:       "Belgium",
-			alpha2:     "BE",
-			alpha3:     "BEL",
-			numeric:    56,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Belgium",
+			Alpha2:     "BE",
+			Alpha3:     "BEL",
+			Numeric:    56,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -375,11 +375,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BF": CountryCode{
-			name:       "Burkina Faso",
-			alpha2:     "BF",
-			alpha3:     "BFA",
-			numeric:    854,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Burkina Faso",
+			Alpha2:     "BF",
+			Alpha3:     "BFA",
+			Numeric:    854,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -388,11 +388,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BG": CountryCode{
-			name:       "Bulgaria",
-			alpha2:     "BG",
-			alpha3:     "BGR",
-			numeric:    100,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bulgaria",
+			Alpha2:     "BG",
+			Alpha3:     "BGR",
+			Numeric:    100,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -401,11 +401,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BH": CountryCode{
-			name:       "Bahrain",
-			alpha2:     "BH",
-			alpha3:     "BHR",
-			numeric:    48,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bahrain",
+			Alpha2:     "BH",
+			Alpha3:     "BHR",
+			Numeric:    48,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -414,11 +414,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BI": CountryCode{
-			name:       "Burundi",
-			alpha2:     "BI",
-			alpha3:     "BDI",
-			numeric:    108,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Burundi",
+			Alpha2:     "BI",
+			Alpha3:     "BDI",
+			Numeric:    108,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -427,11 +427,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BJ": CountryCode{
-			name:       "Benin",
-			alpha2:     "BJ",
-			alpha3:     "BEN",
-			numeric:    204,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Benin",
+			Alpha2:     "BJ",
+			Alpha3:     "BEN",
+			Numeric:    204,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -440,11 +440,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BL": CountryCode{
-			name:       "Saint Barth\u00E9lemy",
-			alpha2:     "BL",
-			alpha3:     "BLM",
-			numeric:    652,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Barth\u00E9lemy",
+			Alpha2:     "BL",
+			Alpha3:     "BLM",
+			Numeric:    652,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -453,11 +453,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BM": CountryCode{
-			name:       "Bermuda",
-			alpha2:     "BM",
-			alpha3:     "BMU",
-			numeric:    60,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bermuda",
+			Alpha2:     "BM",
+			Alpha3:     "BMU",
+			Numeric:    60,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -466,11 +466,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BN": CountryCode{
-			name:       "Brunei Darussalam",
-			alpha2:     "BN",
-			alpha3:     "BRN",
-			numeric:    96,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Brunei Darussalam",
+			Alpha2:     "BN",
+			Alpha3:     "BRN",
+			Numeric:    96,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -479,11 +479,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BO": CountryCode{
-			name:       "Bolivia, Plurinational State of",
-			alpha2:     "BO",
-			alpha3:     "BOL",
-			numeric:    68,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bolivia, Plurinational State of",
+			Alpha2:     "BO",
+			Alpha3:     "BOL",
+			Numeric:    68,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -492,11 +492,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BQ": CountryCode{
-			name:       "Bonaire, Sint Eustatius and Saba",
-			alpha2:     "BQ",
-			alpha3:     "BES",
-			numeric:    535,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bonaire, Sint Eustatius and Saba",
+			Alpha2:     "BQ",
+			Alpha3:     "BES",
+			Numeric:    535,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -505,11 +505,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BR": CountryCode{
-			name:       "Brazil",
-			alpha2:     "BR",
-			alpha3:     "BRA",
-			numeric:    76,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Brazil",
+			Alpha2:     "BR",
+			Alpha3:     "BRA",
+			Numeric:    76,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -518,11 +518,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BS": CountryCode{
-			name:       "Bahamas",
-			alpha2:     "BS",
-			alpha3:     "BHS",
-			numeric:    44,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bahamas",
+			Alpha2:     "BS",
+			Alpha3:     "BHS",
+			Numeric:    44,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -531,11 +531,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BT": CountryCode{
-			name:       "Bhutan",
-			alpha2:     "BT",
-			alpha3:     "BTN",
-			numeric:    64,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bhutan",
+			Alpha2:     "BT",
+			Alpha3:     "BTN",
+			Numeric:    64,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -546,11 +546,11 @@ func init() {
 		 * @see #MM
 		 */
 		"BU": CountryCode{
-			name:       "Burma",
-			alpha2:     "BU",
-			alpha3:     "BUMM",
-			numeric:    104,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Burma",
+			Alpha2:     "BU",
+			Alpha3:     "BUMM",
+			Numeric:    104,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -559,11 +559,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BV": CountryCode{
-			name:       "Bouvet Island",
-			alpha2:     "BV",
-			alpha3:     "BVT",
-			numeric:    74,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Bouvet Island",
+			Alpha2:     "BV",
+			Alpha3:     "BVT",
+			Numeric:    74,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -572,11 +572,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BW": CountryCode{
-			name:       "Botswana",
-			alpha2:     "BW",
-			alpha3:     "BWA",
-			numeric:    72,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Botswana",
+			Alpha2:     "BW",
+			Alpha3:     "BWA",
+			Numeric:    72,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -585,11 +585,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BY": CountryCode{
-			name:       "Belarus",
-			alpha2:     "BY",
-			alpha3:     "BLR",
-			numeric:    112,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Belarus",
+			Alpha2:     "BY",
+			Alpha3:     "BLR",
+			Numeric:    112,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -598,11 +598,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BZ": CountryCode{
-			name:       "Belize",
-			alpha2:     "BZ",
-			alpha3:     "BLZ",
-			numeric:    84,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Belize",
+			Alpha2:     "BZ",
+			Alpha3:     "BLZ",
+			Numeric:    84,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -611,11 +611,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CA": CountryCode{
-			name:       "Canada",
-			alpha2:     "CA",
-			alpha3:     "CAN",
-			numeric:    124,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Canada",
+			Alpha2:     "CA",
+			Alpha3:     "CAN",
+			Numeric:    124,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands">Cocos (Keeling) Islands</a>
@@ -623,11 +623,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CC": CountryCode{
-			name:       "Cocos (Keeling) Islands",
-			alpha2:     "CC",
-			alpha3:     "CCK",
-			numeric:    166,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cocos (Keeling) Islands",
+			Alpha2:     "CC",
+			Alpha3:     "CCK",
+			Numeric:    166,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -636,11 +636,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CD": CountryCode{
-			name:       "Congo, the Democratic Republic of the",
-			alpha2:     "CD",
-			alpha3:     "COD",
-			numeric:    180,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Congo, the Democratic Republic of the",
+			Alpha2:     "CD",
+			Alpha3:     "COD",
+			Numeric:    180,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -649,11 +649,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CF": CountryCode{
-			name:       "Central African Republic",
-			alpha2:     "CF",
-			alpha3:     "CAF",
-			numeric:    140,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Central African Republic",
+			Alpha2:     "CF",
+			Alpha3:     "CAF",
+			Numeric:    140,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -662,11 +662,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CG": CountryCode{
-			name:       "Congo",
-			alpha2:     "CG",
-			alpha3:     "COG",
-			numeric:    178,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Congo",
+			Alpha2:     "CG",
+			Alpha3:     "COG",
+			Numeric:    178,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -675,11 +675,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CH": CountryCode{
-			name:       "Switzerland",
-			alpha2:     "CH",
-			alpha3:     "CHE",
-			numeric:    756,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Switzerland",
+			Alpha2:     "CH",
+			Alpha3:     "CHE",
+			Numeric:    756,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -688,11 +688,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CI": CountryCode{
-			name:       "C\u00F4te d'Ivoire",
-			alpha2:     "CI",
-			alpha3:     "CIV",
-			numeric:    384,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "C\u00F4te d'Ivoire",
+			Alpha2:     "CI",
+			Alpha3:     "CIV",
+			Numeric:    384,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -701,11 +701,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CK": CountryCode{
-			name:       "Cook Islands",
-			alpha2:     "CK",
-			alpha3:     "COK",
-			numeric:    184,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cook Islands",
+			Alpha2:     "CK",
+			Alpha3:     "COK",
+			Numeric:    184,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -714,11 +714,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CL": CountryCode{
-			name:       "Chile",
-			alpha2:     "CL",
-			alpha3:     "CHL",
-			numeric:    152,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Chile",
+			Alpha2:     "CL",
+			Alpha3:     "CHL",
+			Numeric:    152,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -727,11 +727,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CM": CountryCode{
-			name:       "Cameroon",
-			alpha2:     "CM",
-			alpha3:     "CMR",
-			numeric:    120,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cameroon",
+			Alpha2:     "CM",
+			Alpha3:     "CMR",
+			Numeric:    120,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -740,11 +740,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CN": CountryCode{
-			name:       "China",
-			alpha2:     "CN",
-			alpha3:     "CHN",
-			numeric:    156,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "China",
+			Alpha2:     "CN",
+			Alpha3:     "CHN",
+			Numeric:    156,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Colombia">Colombia</a>
@@ -752,11 +752,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CO": CountryCode{
-			name:       "Colombia",
-			alpha2:     "CO",
-			alpha3:     "COL",
-			numeric:    170,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Colombia",
+			Alpha2:     "CO",
+			Alpha3:     "COL",
+			Numeric:    170,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -765,11 +765,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"CP": CountryCode{
-			name:       "Clipperton Island",
-			alpha2:     "CP",
-			alpha3:     "CPT",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Clipperton Island",
+			Alpha2:     "CP",
+			Alpha3:     "CPT",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -778,11 +778,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CR": CountryCode{
-			name:       "Costa Rica",
-			alpha2:     "CR",
-			alpha3:     "CRI",
-			numeric:    188,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Costa Rica",
+			Alpha2:     "CR",
+			Alpha3:     "CRI",
+			Numeric:    188,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -791,11 +791,11 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"CS": CountryCode{
-			name:       "Serbia and Montenegro",
-			alpha2:     "CS",
-			alpha3:     "CSXX",
-			numeric:    891,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Serbia and Montenegro",
+			Alpha2:     "CS",
+			Alpha3:     "CSXX",
+			Numeric:    891,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -804,11 +804,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CU": CountryCode{
-			name:       "Cuba",
-			alpha2:     "CU",
-			alpha3:     "CUB",
-			numeric:    192,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cuba",
+			Alpha2:     "CU",
+			Alpha3:     "CUB",
+			Numeric:    192,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -817,11 +817,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CV": CountryCode{
-			name:       "Cape Verde",
-			alpha2:     "CV",
-			alpha3:     "CPV",
-			numeric:    132,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cape Verde",
+			Alpha2:     "CV",
+			Alpha3:     "CPV",
+			Numeric:    132,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -830,11 +830,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CW": CountryCode{
-			name:       "Cura\u00E7ao",
-			alpha2:     "CW",
-			alpha3:     "CUW",
-			numeric:    531,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cura\u00E7ao",
+			Alpha2:     "CW",
+			Alpha3:     "CUW",
+			Numeric:    531,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -843,11 +843,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CX": CountryCode{
-			name:       "Christmas Island",
-			alpha2:     "CX",
-			alpha3:     "CXR",
-			numeric:    162,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Christmas Island",
+			Alpha2:     "CX",
+			Alpha3:     "CXR",
+			Numeric:    162,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -856,11 +856,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CY": CountryCode{
-			name:       "Cyprus",
-			alpha2:     "CY",
-			alpha3:     "CYP",
-			numeric:    196,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cyprus",
+			Alpha2:     "CY",
+			Alpha3:     "CYP",
+			Numeric:    196,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -869,11 +869,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CZ": CountryCode{
-			name:       "Czech Republic",
-			alpha2:     "CZ",
-			alpha3:     "CZE",
-			numeric:    203,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Czech Republic",
+			Alpha2:     "CZ",
+			Alpha3:     "CZE",
+			Numeric:    203,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -882,11 +882,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DE": CountryCode{
-			name:       "Germany",
-			alpha2:     "DE",
-			alpha3:     "DEU",
-			numeric:    276,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Germany",
+			Alpha2:     "DE",
+			Alpha3:     "DEU",
+			Numeric:    276,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -895,11 +895,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"DG": CountryCode{
-			name:       "Diego Garcia",
-			alpha2:     "DG",
-			alpha3:     "DGA",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Diego Garcia",
+			Alpha2:     "DG",
+			Alpha3:     "DGA",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -908,11 +908,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DJ": CountryCode{
-			name:       "Djibouti",
-			alpha2:     "DJ",
-			alpha3:     "DJI",
-			numeric:    262,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Djibouti",
+			Alpha2:     "DJ",
+			Alpha3:     "DJI",
+			Numeric:    262,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -921,11 +921,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DK": CountryCode{
-			name:       "Denmark",
-			alpha2:     "DK",
-			alpha3:     "DNK",
-			numeric:    208,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Denmark",
+			Alpha2:     "DK",
+			Alpha3:     "DNK",
+			Numeric:    208,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -934,11 +934,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DM": CountryCode{
-			name:       "Dominica",
-			alpha2:     "DM",
-			alpha3:     "DMA",
-			numeric:    212,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Dominica",
+			Alpha2:     "DM",
+			Alpha3:     "DMA",
+			Numeric:    212,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -947,11 +947,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DO": CountryCode{
-			name:       "Dominican Republic",
-			alpha2:     "DO",
-			alpha3:     "DOM",
-			numeric:    214,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Dominican Republic",
+			Alpha2:     "DO",
+			Alpha3:     "DOM",
+			Numeric:    214,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -960,11 +960,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DZ": CountryCode{
-			name:       "Algeria",
-			alpha2:     "DZ",
-			alpha3:     "DZA",
-			numeric:    12,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Algeria",
+			Alpha2:     "DZ",
+			Alpha3:     "DZA",
+			Numeric:    12,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -974,11 +974,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"EA": CountryCode{
-			name:       "Ceuta, Melilla",
-			alpha2:     "EA",
-			alpha3:     "",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Ceuta, Melilla",
+			Alpha2:     "EA",
+			Alpha3:     "",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -987,11 +987,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EC": CountryCode{
-			name:       "Ecuador",
-			alpha2:     "EC",
-			alpha3:     "ECU",
-			numeric:    218,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Ecuador",
+			Alpha2:     "EC",
+			Alpha3:     "ECU",
+			Numeric:    218,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1000,11 +1000,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EE": CountryCode{
-			name:       "Estonia",
-			alpha2:     "EE",
-			alpha3:     "EST",
-			numeric:    233,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Estonia",
+			Alpha2:     "EE",
+			Alpha3:     "EST",
+			Numeric:    233,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1013,11 +1013,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EG": CountryCode{
-			name:       "Egypt",
-			alpha2:     "EG",
-			alpha3:     "EGY",
-			numeric:    818,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Egypt",
+			Alpha2:     "EG",
+			Alpha3:     "EGY",
+			Numeric:    818,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1026,11 +1026,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EH": CountryCode{
-			name:       "Western Sahara",
-			alpha2:     "EH",
-			alpha3:     "ESH",
-			numeric:    732,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Western Sahara",
+			Alpha2:     "EH",
+			Alpha3:     "ESH",
+			Numeric:    732,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1039,11 +1039,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ER": CountryCode{
-			name:       "Eritrea",
-			alpha2:     "ER",
-			alpha3:     "ERI",
-			numeric:    232,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Eritrea",
+			Alpha2:     "ER",
+			Alpha3:     "ERI",
+			Numeric:    232,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1052,11 +1052,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ES": CountryCode{
-			name:       "Spain",
-			alpha2:     "ES",
-			alpha3:     "ESP",
-			numeric:    724,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Spain",
+			Alpha2:     "ES",
+			Alpha3:     "ESP",
+			Numeric:    724,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1065,11 +1065,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ET": CountryCode{
-			name:       "Ethiopia",
-			alpha2:     "ET",
-			alpha3:     "ETH",
-			numeric:    231,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Ethiopia",
+			Alpha2:     "ET",
+			Alpha3:     "ETH",
+			Numeric:    231,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1078,11 +1078,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"EU": CountryCode{
-			name:       "European Union",
-			alpha2:     "EU",
-			alpha3:     "",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "European Union",
+			Alpha2:     "EU",
+			Alpha3:     "",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1093,11 +1093,11 @@ func init() {
 		 * @see #SF
 		 */
 		"FI": CountryCode{
-			name:       "Finland",
-			alpha2:     "FI",
-			alpha3:     "FIN",
-			numeric:    246,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Finland",
+			Alpha2:     "FI",
+			Alpha3:     "FIN",
+			Numeric:    246,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1106,11 +1106,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FJ": CountryCode{
-			name:       "Fiji",
-			alpha2:     "FJ",
-			alpha3:     "FJI",
-			numeric:    242,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Fiji",
+			Alpha2:     "FJ",
+			Alpha3:     "FJI",
+			Numeric:    242,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1119,11 +1119,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FK": CountryCode{
-			name:       "Falkland Islands (Malvinas)",
-			alpha2:     "FK",
-			alpha3:     "FLK",
-			numeric:    238,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Falkland Islands (Malvinas)",
+			Alpha2:     "FK",
+			Alpha3:     "FLK",
+			Numeric:    238,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1132,11 +1132,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FM": CountryCode{
-			name:       "Micronesia, Federated States of",
-			alpha2:     "FM",
-			alpha3:     "FSM",
-			numeric:    583,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Micronesia, Federated States of",
+			Alpha2:     "FM",
+			Alpha3:     "FSM",
+			Numeric:    583,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1145,11 +1145,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FO": CountryCode{
-			name:       "Faroe Islands",
-			alpha2:     "FO",
-			alpha3:     "FRO",
-			numeric:    234,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Faroe Islands",
+			Alpha2:     "FO",
+			Alpha3:     "FRO",
+			Numeric:    234,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1158,11 +1158,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FR": CountryCode{
-			name:       "France",
-			alpha2:     "FR",
-			alpha3:     "FRA",
-			numeric:    250,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "France",
+			Alpha2:     "FR",
+			Alpha3:     "FRA",
+			Numeric:    250,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1171,11 +1171,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"FX": CountryCode{
-			name:       "France, Metropolitan",
-			alpha2:     "FX",
-			alpha3:     "FXX",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "France, Metropolitan",
+			Alpha2:     "FX",
+			Alpha3:     "FXX",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1184,11 +1184,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GA": CountryCode{
-			name:       "Gabon",
-			alpha2:     "GA",
-			alpha3:     "GAB",
-			numeric:    266,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Gabon",
+			Alpha2:     "GA",
+			Alpha3:     "GAB",
+			Numeric:    266,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1197,11 +1197,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GB": CountryCode{
-			name:       "United Kingdom",
-			alpha2:     "GB",
-			alpha3:     "GBR",
-			numeric:    826,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "United Kingdom",
+			Alpha2:     "GB",
+			Alpha3:     "GBR",
+			Numeric:    826,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1210,11 +1210,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GD": CountryCode{
-			name:       "Grenada",
-			alpha2:     "GD",
-			alpha3:     "GRD",
-			numeric:    308,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Grenada",
+			Alpha2:     "GD",
+			Alpha3:     "GRD",
+			Numeric:    308,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1223,11 +1223,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GE": CountryCode{
-			name:       "Georgia",
-			alpha2:     "GE",
-			alpha3:     "GEO",
-			numeric:    268,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Georgia",
+			Alpha2:     "GE",
+			Alpha3:     "GEO",
+			Numeric:    268,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1236,11 +1236,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GF": CountryCode{
-			name:       "French Guiana",
-			alpha2:     "GF",
-			alpha3:     "GUF",
-			numeric:    254,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "French Guiana",
+			Alpha2:     "GF",
+			Alpha3:     "GUF",
+			Numeric:    254,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1249,11 +1249,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GG": CountryCode{
-			name:       "Guernsey",
-			alpha2:     "GG",
-			alpha3:     "GGY",
-			numeric:    831,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guernsey",
+			Alpha2:     "GG",
+			Alpha3:     "GGY",
+			Numeric:    831,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1262,11 +1262,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GH": CountryCode{
-			name:       "Ghana",
-			alpha2:     "GH",
-			alpha3:     "GHA",
-			numeric:    288,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Ghana",
+			Alpha2:     "GH",
+			Alpha3:     "GHA",
+			Numeric:    288,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1275,11 +1275,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GI": CountryCode{
-			name:       "Gibraltar",
-			alpha2:     "GI",
-			alpha3:     "GIB",
-			numeric:    292,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Gibraltar",
+			Alpha2:     "GI",
+			Alpha3:     "GIB",
+			Numeric:    292,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1288,11 +1288,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GL": CountryCode{
-			name:       "Greenland",
-			alpha2:     "GL",
-			alpha3:     "GRL",
-			numeric:    304,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Greenland",
+			Alpha2:     "GL",
+			Alpha3:     "GRL",
+			Numeric:    304,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1301,11 +1301,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GM": CountryCode{
-			name:       "Gambia",
-			alpha2:     "GM",
-			alpha3:     "GMB",
-			numeric:    270,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Gambia",
+			Alpha2:     "GM",
+			Alpha3:     "GMB",
+			Numeric:    270,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1314,11 +1314,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GN": CountryCode{
-			name:       "Guinea",
-			alpha2:     "GN",
-			alpha3:     "GIN",
-			numeric:    324,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guinea",
+			Alpha2:     "GN",
+			Alpha3:     "GIN",
+			Numeric:    324,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1327,11 +1327,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GP": CountryCode{
-			name:       "Guadeloupe",
-			alpha2:     "GP",
-			alpha3:     "GLP",
-			numeric:    312,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guadeloupe",
+			Alpha2:     "GP",
+			Alpha3:     "GLP",
+			Numeric:    312,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1340,11 +1340,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GQ": CountryCode{
-			name:       "Equatorial Guinea",
-			alpha2:     "GQ",
-			alpha3:     "GNQ",
-			numeric:    226,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Equatorial Guinea",
+			Alpha2:     "GQ",
+			Alpha3:     "GNQ",
+			Numeric:    226,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1353,11 +1353,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GR": CountryCode{
-			name:       "Greece",
-			alpha2:     "GR",
-			alpha3:     "GRC",
-			numeric:    300,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Greece",
+			Alpha2:     "GR",
+			Alpha3:     "GRC",
+			Numeric:    300,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1366,11 +1366,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GS": CountryCode{
-			name:       "South Georgia and the South Sandwich Islands",
-			alpha2:     "GS",
-			alpha3:     "SGS",
-			numeric:    239,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "South Georgia and the South Sandwich Islands",
+			Alpha2:     "GS",
+			Alpha3:     "SGS",
+			Numeric:    239,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1379,11 +1379,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GT": CountryCode{
-			name:       "Guatemala",
-			alpha2:     "GT",
-			alpha3:     "GTM",
-			numeric:    320,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guatemala",
+			Alpha2:     "GT",
+			Alpha3:     "GTM",
+			Numeric:    320,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1392,11 +1392,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GU": CountryCode{
-			name:       "Guam",
-			alpha2:     "GU",
-			alpha3:     "GUM",
-			numeric:    316,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guam",
+			Alpha2:     "GU",
+			Alpha3:     "GUM",
+			Numeric:    316,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1405,11 +1405,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GW": CountryCode{
-			name:       "Guinea-Bissau",
-			alpha2:     "GW",
-			alpha3:     "GNB",
-			numeric:    624,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guinea-Bissau",
+			Alpha2:     "GW",
+			Alpha3:     "GNB",
+			Numeric:    624,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1418,11 +1418,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GY": CountryCode{
-			name:       "Guyana",
-			alpha2:     "GY",
-			alpha3:     "GUY",
-			numeric:    328,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Guyana",
+			Alpha2:     "GY",
+			Alpha3:     "GUY",
+			Numeric:    328,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1431,11 +1431,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HK": CountryCode{
-			name:       "Hong Kong",
-			alpha2:     "HK",
-			alpha3:     "HKG",
-			numeric:    344,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Hong Kong",
+			Alpha2:     "HK",
+			Alpha3:     "HKG",
+			Numeric:    344,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1444,11 +1444,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HM": CountryCode{
-			name:       "Heard Island and McDonald Islands",
-			alpha2:     "HM",
-			alpha3:     "HMD",
-			numeric:    334,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Heard Island and McDonald Islands",
+			Alpha2:     "HM",
+			Alpha3:     "HMD",
+			Numeric:    334,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1457,11 +1457,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HN": CountryCode{
-			name:       "Honduras",
-			alpha2:     "HN",
-			alpha3:     "HND",
-			numeric:    340,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Honduras",
+			Alpha2:     "HN",
+			Alpha3:     "HND",
+			Numeric:    340,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1470,11 +1470,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HR": CountryCode{
-			name:       "Croatia",
-			alpha2:     "HR",
-			alpha3:     "HRV",
-			numeric:    191,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Croatia",
+			Alpha2:     "HR",
+			Alpha3:     "HRV",
+			Numeric:    191,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1483,11 +1483,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HT": CountryCode{
-			name:       "Haiti",
-			alpha2:     "HT",
-			alpha3:     "HTI",
-			numeric:    332,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Haiti",
+			Alpha2:     "HT",
+			Alpha3:     "HTI",
+			Numeric:    332,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1496,11 +1496,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HU": CountryCode{
-			name:       "Hungary",
-			alpha2:     "HU",
-			alpha3:     "HUN",
-			numeric:    348,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Hungary",
+			Alpha2:     "HU",
+			Alpha3:     "HUN",
+			Numeric:    348,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1509,11 +1509,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"IC": CountryCode{
-			name:       "Canary Islands",
-			alpha2:     "IC",
-			alpha3:     "",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Canary Islands",
+			Alpha2:     "IC",
+			Alpha3:     "",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1522,11 +1522,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ID": CountryCode{
-			name:       "Indonesia",
-			alpha2:     "ID",
-			alpha3:     "IDN",
-			numeric:    360,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Indonesia",
+			Alpha2:     "ID",
+			Alpha3:     "IDN",
+			Numeric:    360,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1535,11 +1535,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IE": CountryCode{
-			name:       "Ireland",
-			alpha2:     "IE",
-			alpha3:     "IRL",
-			numeric:    372,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Ireland",
+			Alpha2:     "IE",
+			Alpha3:     "IRL",
+			Numeric:    372,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1548,11 +1548,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IL": CountryCode{
-			name:       "Israel",
-			alpha2:     "IL",
-			alpha3:     "ISR",
-			numeric:    376,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Israel",
+			Alpha2:     "IL",
+			Alpha3:     "ISR",
+			Numeric:    376,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1561,11 +1561,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IM": CountryCode{
-			name:       "Isle of Man",
-			alpha2:     "IM",
-			alpha3:     "IMN",
-			numeric:    833,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Isle of Man",
+			Alpha2:     "IM",
+			Alpha3:     "IMN",
+			Numeric:    833,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1574,11 +1574,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IN": CountryCode{
-			name:       "India",
-			alpha2:     "IN",
-			alpha3:     "IND",
-			numeric:    356,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "India",
+			Alpha2:     "IN",
+			Alpha3:     "IND",
+			Numeric:    356,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1587,11 +1587,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IO": CountryCode{
-			name:       "British Indian Ocean Territory",
-			alpha2:     "IO",
-			alpha3:     "IOT",
-			numeric:    86,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "British Indian Ocean Territory",
+			Alpha2:     "IO",
+			Alpha3:     "IOT",
+			Numeric:    86,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1600,11 +1600,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IQ": CountryCode{
-			name:       "Iraq",
-			alpha2:     "IQ",
-			alpha3:     "IRQ",
-			numeric:    368,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Iraq",
+			Alpha2:     "IQ",
+			Alpha3:     "IRQ",
+			Numeric:    368,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1613,11 +1613,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IR": CountryCode{
-			name:       "Iran, Islamic Republic of",
-			alpha2:     "IR",
-			alpha3:     "IRN",
-			numeric:    364,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Iran, Islamic Republic of",
+			Alpha2:     "IR",
+			Alpha3:     "IRN",
+			Numeric:    364,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1626,11 +1626,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IS": CountryCode{
-			name:       "Iceland",
-			alpha2:     "IS",
-			alpha3:     "ISL",
-			numeric:    352,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Iceland",
+			Alpha2:     "IS",
+			Alpha3:     "ISL",
+			Numeric:    352,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1639,11 +1639,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IT": CountryCode{
-			name:       "Italy",
-			alpha2:     "IT",
-			alpha3:     "ITA",
-			numeric:    380,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Italy",
+			Alpha2:     "IT",
+			Alpha3:     "ITA",
+			Numeric:    380,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Jersey">Jersey</a>
@@ -1651,11 +1651,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JE": CountryCode{
-			name:       "Jersey",
-			alpha2:     "JE",
-			alpha3:     "JEY",
-			numeric:    832,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Jersey",
+			Alpha2:     "JE",
+			Alpha3:     "JEY",
+			Numeric:    832,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1664,11 +1664,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JM": CountryCode{
-			name:       "Jamaica",
-			alpha2:     "JM",
-			alpha3:     "JAM",
-			numeric:    388,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Jamaica",
+			Alpha2:     "JM",
+			Alpha3:     "JAM",
+			Numeric:    388,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1677,11 +1677,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JO": CountryCode{
-			name:       "Jordan",
-			alpha2:     "JO",
-			alpha3:     "JOR",
-			numeric:    400,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Jordan",
+			Alpha2:     "JO",
+			Alpha3:     "JOR",
+			Numeric:    400,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1690,11 +1690,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JP": CountryCode{
-			name:       "Japan",
-			alpha2:     "JP",
-			alpha3:     "JPN",
-			numeric:    392,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Japan",
+			Alpha2:     "JP",
+			Alpha3:     "JPN",
+			Numeric:    392,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Kenya">Kenya</a>
@@ -1702,11 +1702,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KE": CountryCode{
-			name:       "Kenya",
-			alpha2:     "KE",
-			alpha3:     "KEN",
-			numeric:    404,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Kenya",
+			Alpha2:     "KE",
+			Alpha3:     "KEN",
+			Numeric:    404,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1715,11 +1715,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KG": CountryCode{
-			name:       "Kyrgyzstan",
-			alpha2:     "KG",
-			alpha3:     "KGZ",
-			numeric:    417,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Kyrgyzstan",
+			Alpha2:     "KG",
+			Alpha3:     "KGZ",
+			Numeric:    417,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1728,11 +1728,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KH": CountryCode{
-			name:       "Cambodia",
-			alpha2:     "KH",
-			alpha3:     "KHM",
-			numeric:    116,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cambodia",
+			Alpha2:     "KH",
+			Alpha3:     "KHM",
+			Numeric:    116,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1741,11 +1741,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KI": CountryCode{
-			name:       "Kiribati",
-			alpha2:     "KI",
-			alpha3:     "KIR",
-			numeric:    296,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Kiribati",
+			Alpha2:     "KI",
+			Alpha3:     "KIR",
+			Numeric:    296,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1754,11 +1754,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KM": CountryCode{
-			name:       "Comoros",
-			alpha2:     "KM",
-			alpha3:     "COM",
-			numeric:    174,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Comoros",
+			Alpha2:     "KM",
+			Alpha3:     "COM",
+			Numeric:    174,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1767,11 +1767,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KN": CountryCode{
-			name:       "Saint Kitts and Nevis",
-			alpha2:     "KN",
-			alpha3:     "KNA",
-			numeric:    659,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Kitts and Nevis",
+			Alpha2:     "KN",
+			Alpha3:     "KNA",
+			Numeric:    659,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1780,11 +1780,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KP": CountryCode{
-			name:       "Korea, Democratic People's Republic of",
-			alpha2:     "KP",
-			alpha3:     "PRK",
-			numeric:    408,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Korea, Democratic People's Republic of",
+			Alpha2:     "KP",
+			Alpha3:     "PRK",
+			Numeric:    408,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1793,11 +1793,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KR": CountryCode{
-			name:       "Korea, Republic of",
-			alpha2:     "KR",
-			alpha3:     "KOR",
-			numeric:    410,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Korea, Republic of",
+			Alpha2:     "KR",
+			Alpha3:     "KOR",
+			Numeric:    410,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1806,11 +1806,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KW": CountryCode{
-			name:       "Kuwait",
-			alpha2:     "KW",
-			alpha3:     "KWT",
-			numeric:    414,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Kuwait",
+			Alpha2:     "KW",
+			Alpha3:     "KWT",
+			Numeric:    414,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1819,11 +1819,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KY": CountryCode{
-			name:       "Cayman Islands",
-			alpha2:     "KY",
-			alpha3:     "CYM",
-			numeric:    136,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Cayman Islands",
+			Alpha2:     "KY",
+			Alpha3:     "CYM",
+			Numeric:    136,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1832,11 +1832,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KZ": CountryCode{
-			name:       "Kazakhstan",
-			alpha2:     "KZ",
-			alpha3:     "KAZ",
-			numeric:    398,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Kazakhstan",
+			Alpha2:     "KZ",
+			Alpha3:     "KAZ",
+			Numeric:    398,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1845,11 +1845,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LA": CountryCode{
-			name:       "Lao People's Democratic Republic",
-			alpha2:     "LA",
-			alpha3:     "LAO",
-			numeric:    418,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Lao People's Democratic Republic",
+			Alpha2:     "LA",
+			Alpha3:     "LAO",
+			Numeric:    418,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1858,11 +1858,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LB": CountryCode{
-			name:       "Lebanon",
-			alpha2:     "LB",
-			alpha3:     "LBN",
-			numeric:    422,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Lebanon",
+			Alpha2:     "LB",
+			Alpha3:     "LBN",
+			Numeric:    422,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1871,11 +1871,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LC": CountryCode{
-			name:       "Saint Lucia",
-			alpha2:     "LC",
-			alpha3:     "LCA",
-			numeric:    662,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Lucia",
+			Alpha2:     "LC",
+			Alpha3:     "LCA",
+			Numeric:    662,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1884,11 +1884,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LI": CountryCode{
-			name:       "Liechtenstein",
-			alpha2:     "LI",
-			alpha3:     "LIE",
-			numeric:    438,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Liechtenstein",
+			Alpha2:     "LI",
+			Alpha3:     "LIE",
+			Numeric:    438,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1897,11 +1897,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LK": CountryCode{
-			name:       "Sri Lanka",
-			alpha2:     "LK",
-			alpha3:     "LKA",
-			numeric:    144,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sri Lanka",
+			Alpha2:     "LK",
+			Alpha3:     "LKA",
+			Numeric:    144,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1910,11 +1910,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LR": CountryCode{
-			name:       "Liberia",
-			alpha2:     "LR",
-			alpha3:     "LBR",
-			numeric:    430,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Liberia",
+			Alpha2:     "LR",
+			Alpha3:     "LBR",
+			Numeric:    430,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1923,11 +1923,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LS": CountryCode{
-			name:       "Lesotho",
-			alpha2:     "LS",
-			alpha3:     "LSO",
-			numeric:    426,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Lesotho",
+			Alpha2:     "LS",
+			Alpha3:     "LSO",
+			Numeric:    426,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1936,11 +1936,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LT": CountryCode{
-			name:       "Lithuania",
-			alpha2:     "LT",
-			alpha3:     "LTU",
-			numeric:    440,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Lithuania",
+			Alpha2:     "LT",
+			Alpha3:     "LTU",
+			Numeric:    440,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1949,11 +1949,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LU": CountryCode{
-			name:       "Luxembourg",
-			alpha2:     "LU",
-			alpha3:     "LUX",
-			numeric:    442,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Luxembourg",
+			Alpha2:     "LU",
+			Alpha3:     "LUX",
+			Numeric:    442,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1962,11 +1962,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LV": CountryCode{
-			name:       "Latvia",
-			alpha2:     "LV",
-			alpha3:     "LVA",
-			numeric:    428,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Latvia",
+			Alpha2:     "LV",
+			Alpha3:     "LVA",
+			Numeric:    428,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1975,11 +1975,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LY": CountryCode{
-			name:       "Libya",
-			alpha2:     "LY",
-			alpha3:     "LBY",
-			numeric:    434,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Libya",
+			Alpha2:     "LY",
+			Alpha3:     "LBY",
+			Numeric:    434,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1988,11 +1988,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MA": CountryCode{
-			name:       "Morocco",
-			alpha2:     "MA",
-			alpha3:     "MAR",
-			numeric:    504,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Morocco",
+			Alpha2:     "MA",
+			Alpha3:     "MAR",
+			Numeric:    504,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2001,11 +2001,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MC": CountryCode{
-			name:       "Monaco",
-			alpha2:     "MC",
-			alpha3:     "MCO",
-			numeric:    492,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Monaco",
+			Alpha2:     "MC",
+			Alpha3:     "MCO",
+			Numeric:    492,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2014,11 +2014,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MD": CountryCode{
-			name:       "Moldova, Republic of",
-			alpha2:     "MD",
-			alpha3:     "MDA",
-			numeric:    498,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Moldova, Republic of",
+			Alpha2:     "MD",
+			Alpha3:     "MDA",
+			Numeric:    498,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2027,11 +2027,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ME": CountryCode{
-			name:       "Montenegro",
-			alpha2:     "ME",
-			alpha3:     "MNE",
-			numeric:    499,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Montenegro",
+			Alpha2:     "ME",
+			Alpha3:     "MNE",
+			Numeric:    499,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2040,11 +2040,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MF": CountryCode{
-			name:       "Saint Martin (French part)",
-			alpha2:     "MF",
-			alpha3:     "MAF",
-			numeric:    663,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Martin (French part)",
+			Alpha2:     "MF",
+			Alpha3:     "MAF",
+			Numeric:    663,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2053,11 +2053,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MG": CountryCode{
-			name:       "Madagascar",
-			alpha2:     "MG",
-			alpha3:     "MDG",
-			numeric:    450,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Madagascar",
+			Alpha2:     "MG",
+			Alpha3:     "MDG",
+			Numeric:    450,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2066,11 +2066,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MH": CountryCode{
-			name:       "Marshall Islands",
-			alpha2:     "MH",
-			alpha3:     "MHL",
-			numeric:    584,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Marshall Islands",
+			Alpha2:     "MH",
+			Alpha3:     "MHL",
+			Numeric:    584,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2079,11 +2079,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MK": CountryCode{
-			name:       "Macedonia, the former Yugoslav Republic of",
-			alpha2:     "MK",
-			alpha3:     "MKD",
-			numeric:    807,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Macedonia, the former Yugoslav Republic of",
+			Alpha2:     "MK",
+			Alpha3:     "MKD",
+			Numeric:    807,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2092,11 +2092,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ML": CountryCode{
-			name:       "Mali",
-			alpha2:     "ML",
-			alpha3:     "MLI",
-			numeric:    466,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mali",
+			Alpha2:     "ML",
+			Alpha3:     "MLI",
+			Numeric:    466,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2107,11 +2107,11 @@ func init() {
 		 * @see #BU
 		 */
 		"MM": CountryCode{
-			name:       "Myanmar",
-			alpha2:     "MM",
-			alpha3:     "MMR",
-			numeric:    104,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Myanmar",
+			Alpha2:     "MM",
+			Alpha3:     "MMR",
+			Numeric:    104,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2120,11 +2120,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MN": CountryCode{
-			name:       "Mongolia",
-			alpha2:     "MN",
-			alpha3:     "MNG",
-			numeric:    496,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mongolia",
+			Alpha2:     "MN",
+			Alpha3:     "MNG",
+			Numeric:    496,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2133,11 +2133,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MO": CountryCode{
-			name:       "Macao",
-			alpha2:     "MO",
-			alpha3:     "MAC",
-			numeric:    446,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Macao",
+			Alpha2:     "MO",
+			Alpha3:     "MAC",
+			Numeric:    446,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2146,11 +2146,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MP": CountryCode{
-			name:       "Northern Mariana Islands",
-			alpha2:     "MP",
-			alpha3:     "MNP",
-			numeric:    580,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Northern Mariana Islands",
+			Alpha2:     "MP",
+			Alpha3:     "MNP",
+			Numeric:    580,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2159,11 +2159,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MQ": CountryCode{
-			name:       "Martinique",
-			alpha2:     "MQ",
-			alpha3:     "MTQ",
-			numeric:    474,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Martinique",
+			Alpha2:     "MQ",
+			Alpha3:     "MTQ",
+			Numeric:    474,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2172,11 +2172,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MR": CountryCode{
-			name:       "Mauritania",
-			alpha2:     "MR",
-			alpha3:     "MRT",
-			numeric:    478,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mauritania",
+			Alpha2:     "MR",
+			Alpha3:     "MRT",
+			Numeric:    478,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2185,11 +2185,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MS": CountryCode{
-			name:       "Montserrat",
-			alpha2:     "MS",
-			alpha3:     "MSR",
-			numeric:    500,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Montserrat",
+			Alpha2:     "MS",
+			Alpha3:     "MSR",
+			Numeric:    500,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2198,11 +2198,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MT": CountryCode{
-			name:       "Malta",
-			alpha2:     "MT",
-			alpha3:     "MLT",
-			numeric:    470,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Malta",
+			Alpha2:     "MT",
+			Alpha3:     "MLT",
+			Numeric:    470,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2211,11 +2211,11 @@ func init() {
 		 * Officially assigned]]
 		 */
 		"MU": CountryCode{
-			name:       "Mauritius",
-			alpha2:     "MU",
-			alpha3:     "MUS",
-			numeric:    480,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mauritius",
+			Alpha2:     "MU",
+			Alpha3:     "MUS",
+			Numeric:    480,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2224,11 +2224,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MV": CountryCode{
-			name:       "Maldives",
-			alpha2:     "MV",
-			alpha3:     "MDV",
-			numeric:    462,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Maldives",
+			Alpha2:     "MV",
+			Alpha3:     "MDV",
+			Numeric:    462,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2237,11 +2237,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MW": CountryCode{
-			name:       "Malawi",
-			alpha2:     "MW",
-			alpha3:     "MWI",
-			numeric:    454,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Malawi",
+			Alpha2:     "MW",
+			Alpha3:     "MWI",
+			Numeric:    454,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2250,11 +2250,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MX": CountryCode{
-			name:       "Mexico",
-			alpha2:     "MX",
-			alpha3:     "MEX",
-			numeric:    484,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mexico",
+			Alpha2:     "MX",
+			Alpha3:     "MEX",
+			Numeric:    484,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2263,11 +2263,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MY": CountryCode{
-			name:       "Malaysia",
-			alpha2:     "MY",
-			alpha3:     "MYS",
-			numeric:    458,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Malaysia",
+			Alpha2:     "MY",
+			Alpha3:     "MYS",
+			Numeric:    458,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2276,11 +2276,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MZ": CountryCode{
-			name:       "Mozambique",
-			alpha2:     "MZ",
-			alpha3:     "MOZ",
-			numeric:    508,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mozambique",
+			Alpha2:     "MZ",
+			Alpha3:     "MOZ",
+			Numeric:    508,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2289,11 +2289,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NA": CountryCode{
-			name:       "Namibia",
-			alpha2:     "NA",
-			alpha3:     "NAM",
-			numeric:    516,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Namibia",
+			Alpha2:     "NA",
+			Alpha3:     "NAM",
+			Numeric:    516,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2302,11 +2302,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NC": CountryCode{
-			name:       "New Caledonia",
-			alpha2:     "NC",
-			alpha3:     "NCL",
-			numeric:    540,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "New Caledonia",
+			Alpha2:     "NC",
+			Alpha3:     "NCL",
+			Numeric:    540,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2315,11 +2315,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NE": CountryCode{
-			name:       "Niger",
-			alpha2:     "NE",
-			alpha3:     "NER",
-			numeric:    562,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Niger",
+			Alpha2:     "NE",
+			Alpha3:     "NER",
+			Numeric:    562,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2328,11 +2328,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NF": CountryCode{
-			name:       "Norfolk Island",
-			alpha2:     "NF",
-			alpha3:     "NFK",
-			numeric:    574,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Norfolk Island",
+			Alpha2:     "NF",
+			Alpha3:     "NFK",
+			Numeric:    574,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2341,11 +2341,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NG": CountryCode{
-			name:       "Nigera",
-			alpha2:     "NG",
-			alpha3:     "NGA",
-			numeric:    566,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Nigera",
+			Alpha2:     "NG",
+			Alpha3:     "NGA",
+			Numeric:    566,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2354,11 +2354,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NI": CountryCode{
-			name:       "Nicaragua",
-			alpha2:     "NI",
-			alpha3:     "NIC",
-			numeric:    558,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Nicaragua",
+			Alpha2:     "NI",
+			Alpha3:     "NIC",
+			Numeric:    558,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2367,11 +2367,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NL": CountryCode{
-			name:       "Netherlands",
-			alpha2:     "NL",
-			alpha3:     "NLD",
-			numeric:    528,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Netherlands",
+			Alpha2:     "NL",
+			Alpha3:     "NLD",
+			Numeric:    528,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2380,11 +2380,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NO": CountryCode{
-			name:       "Norway",
-			alpha2:     "NO",
-			alpha3:     "NOR",
-			numeric:    578,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Norway",
+			Alpha2:     "NO",
+			Alpha3:     "NOR",
+			Numeric:    578,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2393,11 +2393,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NP": CountryCode{
-			name:       "Nepal",
-			alpha2:     "NP",
-			alpha3:     "NPL",
-			numeric:    524,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Nepal",
+			Alpha2:     "NP",
+			Alpha3:     "NPL",
+			Numeric:    524,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2406,11 +2406,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NR": CountryCode{
-			name:       "Nauru",
-			alpha2:     "NR",
-			alpha3:     "NRU",
-			numeric:    520,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Nauru",
+			Alpha2:     "NR",
+			Alpha3:     "NRU",
+			Numeric:    520,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2419,11 +2419,11 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"NT": CountryCode{
-			name:       "Neutral Zone",
-			alpha2:     "NT",
-			alpha3:     "NTHH",
-			numeric:    536,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Neutral Zone",
+			Alpha2:     "NT",
+			Alpha3:     "NTHH",
+			Numeric:    536,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -2432,11 +2432,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NU": CountryCode{
-			name:       "Niue",
-			alpha2:     "NU",
-			alpha3:     "NIU",
-			numeric:    570,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Niue",
+			Alpha2:     "NU",
+			Alpha3:     "NIU",
+			Numeric:    570,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2445,11 +2445,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NZ": CountryCode{
-			name:       "New Zealand",
-			alpha2:     "NZ",
-			alpha3:     "NZL",
-			numeric:    554,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "New Zealand",
+			Alpha2:     "NZ",
+			Alpha3:     "NZL",
+			Numeric:    554,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2458,11 +2458,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"OM": CountryCode{
-			name:       "Oman",
-			alpha2:     "OM",
-			alpha3:     "OMN",
-			numeric:    512,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Oman",
+			Alpha2:     "OM",
+			Alpha3:     "OMN",
+			Numeric:    512,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2471,11 +2471,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PA": CountryCode{
-			name:       "Panama",
-			alpha2:     "PA",
-			alpha3:     "PAN",
-			numeric:    591,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Panama",
+			Alpha2:     "PA",
+			Alpha3:     "PAN",
+			Numeric:    591,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2484,11 +2484,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PE": CountryCode{
-			name:       "Peru",
-			alpha2:     "PE",
-			alpha3:     "PER",
-			numeric:    604,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Peru",
+			Alpha2:     "PE",
+			Alpha3:     "PER",
+			Numeric:    604,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2497,11 +2497,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PF": CountryCode{
-			name:       "French Polynesia",
-			alpha2:     "PF",
-			alpha3:     "PYF",
-			numeric:    258,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "French Polynesia",
+			Alpha2:     "PF",
+			Alpha3:     "PYF",
+			Numeric:    258,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2510,11 +2510,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PG": CountryCode{
-			name:       "Papua New Guinea",
-			alpha2:     "PG",
-			alpha3:     "PNG",
-			numeric:    598,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Papua New Guinea",
+			Alpha2:     "PG",
+			Alpha3:     "PNG",
+			Numeric:    598,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2523,11 +2523,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PH": CountryCode{
-			name:       "Philippines",
-			alpha2:     "PH",
-			alpha3:     "PHL",
-			numeric:    608,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Philippines",
+			Alpha2:     "PH",
+			Alpha3:     "PHL",
+			Numeric:    608,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2536,11 +2536,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PK": CountryCode{
-			name:       "Pakistan",
-			alpha2:     "PK",
-			alpha3:     "PAK",
-			numeric:    586,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Pakistan",
+			Alpha2:     "PK",
+			Alpha3:     "PAK",
+			Numeric:    586,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2549,11 +2549,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PL": CountryCode{
-			name:       "Poland",
-			alpha2:     "PL",
-			alpha3:     "POL",
-			numeric:    616,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Poland",
+			Alpha2:     "PL",
+			Alpha3:     "POL",
+			Numeric:    616,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2562,11 +2562,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PM": CountryCode{
-			name:       "Saint Pierre and Miquelon",
-			alpha2:     "PM",
-			alpha3:     "SPM",
-			numeric:    666,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Pierre and Miquelon",
+			Alpha2:     "PM",
+			Alpha3:     "SPM",
+			Numeric:    666,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2575,11 +2575,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PN": CountryCode{
-			name:       "Pitcairn",
-			alpha2:     "PN",
-			alpha3:     "PCN",
-			numeric:    612,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Pitcairn",
+			Alpha2:     "PN",
+			Alpha3:     "PCN",
+			Numeric:    612,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2588,11 +2588,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PR": CountryCode{
-			name:       "Puerto Rico",
-			alpha2:     "PR",
-			alpha3:     "PRI",
-			numeric:    630,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Puerto Rico",
+			Alpha2:     "PR",
+			Alpha3:     "PRI",
+			Numeric:    630,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2601,11 +2601,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PS": CountryCode{
-			name:       "Palestine, State of",
-			alpha2:     "PS",
-			alpha3:     "PSE",
-			numeric:    275,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Palestine, State of",
+			Alpha2:     "PS",
+			Alpha3:     "PSE",
+			Numeric:    275,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2614,11 +2614,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PT": CountryCode{
-			name:       "Portugal",
-			alpha2:     "PT",
-			alpha3:     "PRT",
-			numeric:    620,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Portugal",
+			Alpha2:     "PT",
+			Alpha3:     "PRT",
+			Numeric:    620,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2627,11 +2627,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PW": CountryCode{
-			name:       "Palau",
-			alpha2:     "PW",
-			alpha3:     "PLW",
-			numeric:    585,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Palau",
+			Alpha2:     "PW",
+			Alpha3:     "PLW",
+			Numeric:    585,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2640,11 +2640,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PY": CountryCode{
-			name:       "Paraguay",
-			alpha2:     "PY",
-			alpha3:     "PRY",
-			numeric:    600,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Paraguay",
+			Alpha2:     "PY",
+			Alpha3:     "PRY",
+			Numeric:    600,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2653,11 +2653,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"QA": CountryCode{
-			name:       "Qatar",
-			alpha2:     "QA",
-			alpha3:     "QAT",
-			numeric:    634,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Qatar",
+			Alpha2:     "QA",
+			Alpha3:     "QAT",
+			Numeric:    634,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2666,11 +2666,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RE": CountryCode{
-			name:       "R\u00E9union",
-			alpha2:     "RE",
-			alpha3:     "REU",
-			numeric:    638,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "R\u00E9union",
+			Alpha2:     "RE",
+			Alpha3:     "REU",
+			Numeric:    638,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2679,11 +2679,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RO": CountryCode{
-			name:       "Romania",
-			alpha2:     "RO",
-			alpha3:     "ROU",
-			numeric:    642,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Romania",
+			Alpha2:     "RO",
+			Alpha3:     "ROU",
+			Numeric:    642,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2692,11 +2692,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RS": CountryCode{
-			name:       "Serbia",
-			alpha2:     "RS",
-			alpha3:     "SRB",
-			numeric:    688,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Serbia",
+			Alpha2:     "RS",
+			Alpha3:     "SRB",
+			Numeric:    688,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2705,11 +2705,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RU": CountryCode{
-			name:       "Russian Federation",
-			alpha2:     "RU",
-			alpha3:     "RUS",
-			numeric:    643,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Russian Federation",
+			Alpha2:     "RU",
+			Alpha3:     "RUS",
+			Numeric:    643,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2718,11 +2718,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RW": CountryCode{
-			name:       "Rwanda",
-			alpha2:     "RW",
-			alpha3:     "RWA",
-			numeric:    646,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Rwanda",
+			Alpha2:     "RW",
+			Alpha3:     "RWA",
+			Numeric:    646,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2731,11 +2731,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SA": CountryCode{
-			name:       "Saudi Arabia",
-			alpha2:     "SA",
-			alpha3:     "SAU",
-			numeric:    682,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saudi Arabia",
+			Alpha2:     "SA",
+			Alpha3:     "SAU",
+			Numeric:    682,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2744,11 +2744,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SB": CountryCode{
-			name:       "Solomon Islands",
-			alpha2:     "SB",
-			alpha3:     "SLB",
-			numeric:    90,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Solomon Islands",
+			Alpha2:     "SB",
+			Alpha3:     "SLB",
+			Numeric:    90,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2757,11 +2757,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SC": CountryCode{
-			name:       "Seychelles",
-			alpha2:     "SC",
-			alpha3:     "SYC",
-			numeric:    690,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Seychelles",
+			Alpha2:     "SC",
+			Alpha3:     "SYC",
+			Numeric:    690,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2770,11 +2770,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SD": CountryCode{
-			name:       "Sudan",
-			alpha2:     "SD",
-			alpha3:     "SDN",
-			numeric:    729,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sudan",
+			Alpha2:     "SD",
+			Alpha3:     "SDN",
+			Numeric:    729,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2783,11 +2783,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SE": CountryCode{
-			name:       "Sweden",
-			alpha2:     "SE",
-			alpha3:     "SWE",
-			numeric:    752,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sweden",
+			Alpha2:     "SE",
+			Alpha3:     "SWE",
+			Numeric:    752,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2798,11 +2798,11 @@ func init() {
 		 * @see #FI
 		 */
 		"SF": CountryCode{
-			name:       "Finland",
-			alpha2:     "SF",
-			alpha3:     "FIN",
-			numeric:    246,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Finland",
+			Alpha2:     "SF",
+			Alpha3:     "FIN",
+			Numeric:    246,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -2811,11 +2811,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SG": CountryCode{
-			name:       "Singapore",
-			alpha2:     "SG",
-			alpha3:     "SGP",
-			numeric:    702,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Singapore",
+			Alpha2:     "SG",
+			Alpha3:     "SGP",
+			Numeric:    702,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2824,11 +2824,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SH": CountryCode{
-			name:       "Saint Helena, Ascension and Tristan da Cunha",
-			alpha2:     "SH",
-			alpha3:     "SHN",
-			numeric:    654,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Helena, Ascension and Tristan da Cunha",
+			Alpha2:     "SH",
+			Alpha3:     "SHN",
+			Numeric:    654,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2837,11 +2837,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SI": CountryCode{
-			name:       "Slovenia",
-			alpha2:     "SI",
-			alpha3:     "SVN",
-			numeric:    705,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Slovenia",
+			Alpha2:     "SI",
+			Alpha3:     "SVN",
+			Numeric:    705,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2850,11 +2850,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SJ": CountryCode{
-			name:       "Svalbard and Jan Mayen",
-			alpha2:     "SJ",
-			alpha3:     "SJM",
-			numeric:    744,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Svalbard and Jan Mayen",
+			Alpha2:     "SJ",
+			Alpha3:     "SJM",
+			Numeric:    744,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2863,11 +2863,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SK": CountryCode{
-			name:       "Slovakia",
-			alpha2:     "SK",
-			alpha3:     "SVK",
-			numeric:    703,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Slovakia",
+			Alpha2:     "SK",
+			Alpha3:     "SVK",
+			Numeric:    703,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2876,11 +2876,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SL": CountryCode{
-			name:       "Sierra Leone",
-			alpha2:     "SL",
-			alpha3:     "SLE",
-			numeric:    694,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sierra Leone",
+			Alpha2:     "SL",
+			Alpha3:     "SLE",
+			Numeric:    694,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2889,11 +2889,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SM": CountryCode{
-			name:       "San Marino",
-			alpha2:     "SM",
-			alpha3:     "SMR",
-			numeric:    674,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "San Marino",
+			Alpha2:     "SM",
+			Alpha3:     "SMR",
+			Numeric:    674,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2902,11 +2902,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SN": CountryCode{
-			name:       "Senegal",
-			alpha2:     "SN",
-			alpha3:     "SEN",
-			numeric:    686,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Senegal",
+			Alpha2:     "SN",
+			Alpha3:     "SEN",
+			Numeric:    686,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2915,11 +2915,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SO": CountryCode{
-			name:       "Somalia",
-			alpha2:     "SO",
-			alpha3:     "SOM",
-			numeric:    706,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Somalia",
+			Alpha2:     "SO",
+			Alpha3:     "SOM",
+			Numeric:    706,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2928,11 +2928,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SR": CountryCode{
-			name:       "Suriname",
-			alpha2:     "SR",
-			alpha3:     "SUR",
-			numeric:    740,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Suriname",
+			Alpha2:     "SR",
+			Alpha3:     "SUR",
+			Numeric:    740,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2941,11 +2941,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SS": CountryCode{
-			name:       "South Sudan",
-			alpha2:     "SS",
-			alpha3:     "SSD",
-			numeric:    728,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "South Sudan",
+			Alpha2:     "SS",
+			Alpha3:     "SSD",
+			Numeric:    728,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2954,11 +2954,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ST": CountryCode{
-			name:       "Sao Tome and Principe",
-			alpha2:     "ST",
-			alpha3:     "STP",
-			numeric:    678,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sao Tome and Principe",
+			Alpha2:     "ST",
+			Alpha3:     "STP",
+			Numeric:    678,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2967,11 +2967,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"SU": CountryCode{
-			name:       "USSR",
-			alpha2:     "SU",
-			alpha3:     "SUN",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "USSR",
+			Alpha2:     "SU",
+			Alpha3:     "SUN",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -2980,11 +2980,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SV": CountryCode{
-			name:       "El Salvador",
-			alpha2:     "SV",
-			alpha3:     "SLV",
-			numeric:    222,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "El Salvador",
+			Alpha2:     "SV",
+			Alpha3:     "SLV",
+			Numeric:    222,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2993,11 +2993,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SX": CountryCode{
-			name:       "Sint Maarten (Dutch part)",
-			alpha2:     "SX",
-			alpha3:     "SXM",
-			numeric:    534,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Sint Maarten (Dutch part)",
+			Alpha2:     "SX",
+			Alpha3:     "SXM",
+			Numeric:    534,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3006,11 +3006,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SY": CountryCode{
-			name:       "Syrian Arab Republic",
-			alpha2:     "SY",
-			alpha3:     "SYR",
-			numeric:    760,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Syrian Arab Republic",
+			Alpha2:     "SY",
+			Alpha3:     "SYR",
+			Numeric:    760,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3019,11 +3019,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SZ": CountryCode{
-			name:       "Swaziland",
-			alpha2:     "SZ",
-			alpha3:     "SWZ",
-			numeric:    748,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Swaziland",
+			Alpha2:     "SZ",
+			Alpha3:     "SWZ",
+			Numeric:    748,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3032,11 +3032,11 @@ func init() {
 		 * Exceptionally reserved.
 		 */
 		"TA": CountryCode{
-			name:       "Tristan da Cunha",
-			alpha2:     "TA",
-			alpha3:     "TAA",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "Tristan da Cunha",
+			Alpha2:     "TA",
+			Alpha3:     "TAA",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -3045,11 +3045,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TC": CountryCode{
-			name:       "Turks and Caicos Islands",
-			alpha2:     "TC",
-			alpha3:     "TCA",
-			numeric:    796,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Turks and Caicos Islands",
+			Alpha2:     "TC",
+			Alpha3:     "TCA",
+			Numeric:    796,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3058,11 +3058,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TD": CountryCode{
-			name:       "Chad",
-			alpha2:     "TD",
-			alpha3:     "TCD",
-			numeric:    148,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Chad",
+			Alpha2:     "TD",
+			Alpha3:     "TCD",
+			Numeric:    148,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3071,11 +3071,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TF": CountryCode{
-			name:       "French Southern Territories",
-			alpha2:     "TF",
-			alpha3:     "ATF",
-			numeric:    260,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "French Southern Territories",
+			Alpha2:     "TF",
+			Alpha3:     "ATF",
+			Numeric:    260,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3084,11 +3084,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TG": CountryCode{
-			name:       "Togo",
-			alpha2:     "TG",
-			alpha3:     "TGO",
-			numeric:    768,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Togo",
+			Alpha2:     "TG",
+			Alpha3:     "TGO",
+			Numeric:    768,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3097,11 +3097,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TH": CountryCode{
-			name:       "Thailand",
-			alpha2:     "TH",
-			alpha3:     "THA",
-			numeric:    764,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Thailand",
+			Alpha2:     "TH",
+			Alpha3:     "THA",
+			Numeric:    764,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3110,11 +3110,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TJ": CountryCode{
-			name:       "Tajikistan",
-			alpha2:     "TJ",
-			alpha3:     "TJK",
-			numeric:    762,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tajikistan",
+			Alpha2:     "TJ",
+			Alpha3:     "TJK",
+			Numeric:    762,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3123,11 +3123,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TK": CountryCode{
-			name:       "Tokelau",
-			alpha2:     "TK",
-			alpha3:     "TKL",
-			numeric:    772,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tokelau",
+			Alpha2:     "TK",
+			Alpha3:     "TKL",
+			Numeric:    772,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3136,11 +3136,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TL": CountryCode{
-			name:       "Timor-Leste",
-			alpha2:     "TL",
-			alpha3:     "TLS",
-			numeric:    626,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Timor-Leste",
+			Alpha2:     "TL",
+			Alpha3:     "TLS",
+			Numeric:    626,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3149,11 +3149,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TM": CountryCode{
-			name:       "Turkmenistan",
-			alpha2:     "TM",
-			alpha3:     "TKM",
-			numeric:    795,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Turkmenistan",
+			Alpha2:     "TM",
+			Alpha3:     "TKM",
+			Numeric:    795,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3162,11 +3162,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TN": CountryCode{
-			name:       "Tunisia",
-			alpha2:     "TN",
-			alpha3:     "TUN",
-			numeric:    788,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tunisia",
+			Alpha2:     "TN",
+			Alpha3:     "TUN",
+			Numeric:    788,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3175,11 +3175,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TO": CountryCode{
-			name:       "Tonga",
-			alpha2:     "TO",
-			alpha3:     "TON",
-			numeric:    776,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tonga",
+			Alpha2:     "TO",
+			Alpha3:     "TON",
+			Numeric:    776,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3192,11 +3192,11 @@ func init() {
 		 * </p>
 		 */
 		"TP": CountryCode{
-			name:       "East Timor",
-			alpha2:     "TP",
-			alpha3:     "TPTL",
-			numeric:    0,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "East Timor",
+			Alpha2:     "TP",
+			Alpha3:     "TPTL",
+			Numeric:    0,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3205,11 +3205,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TR": CountryCode{
-			name:       "Turkey",
-			alpha2:     "TR",
-			alpha3:     "TUR",
-			numeric:    792,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Turkey",
+			Alpha2:     "TR",
+			Alpha3:     "TUR",
+			Numeric:    792,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3218,11 +3218,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TT": CountryCode{
-			name:       "Trinidad and Tobago",
-			alpha2:     "TT",
-			alpha3:     "TTO",
-			numeric:    780,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Trinidad and Tobago",
+			Alpha2:     "TT",
+			Alpha3:     "TTO",
+			Numeric:    780,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3231,11 +3231,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TV": CountryCode{
-			name:       "Tuvalu",
-			alpha2:     "TV",
-			alpha3:     "TUV",
-			numeric:    798,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tuvalu",
+			Alpha2:     "TV",
+			Alpha3:     "TUV",
+			Numeric:    798,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3244,11 +3244,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TW": CountryCode{
-			name:       "Taiwan, Province of China",
-			alpha2:     "TW",
-			alpha3:     "TWN",
-			numeric:    158,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Taiwan, Province of China",
+			Alpha2:     "TW",
+			Alpha3:     "TWN",
+			Numeric:    158,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3257,11 +3257,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TZ": CountryCode{
-			name:       "Tanzania, United Republic of",
-			alpha2:     "TZ",
-			alpha3:     "TZA",
-			numeric:    834,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Tanzania, United Republic of",
+			Alpha2:     "TZ",
+			Alpha3:     "TZA",
+			Numeric:    834,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3270,11 +3270,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UA": CountryCode{
-			name:       "Ukraine",
-			alpha2:     "UA",
-			alpha3:     "UKR",
-			numeric:    804,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Ukraine",
+			Alpha2:     "UA",
+			Alpha3:     "UKR",
+			Numeric:    804,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3283,11 +3283,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UG": CountryCode{
-			name:       "Uganda",
-			alpha2:     "UG",
-			alpha3:     "UGA",
-			numeric:    800,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Uganda",
+			Alpha2:     "UG",
+			Alpha3:     "UGA",
+			Numeric:    800,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3296,11 +3296,11 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"UK": CountryCode{
-			name:       "United Kingdom",
-			alpha2:     "UK",
-			alpha3:     "",
-			numeric:    -1,
-			assignment: EXCEPTIONALLY_RESERVED,
+			Name:       "United Kingdom",
+			Alpha2:     "UK",
+			Alpha3:     "",
+			Numeric:    -1,
+			Assignment: EXCEPTIONALLY_RESERVED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands">United States Minor Outlying Islands</a>
@@ -3308,11 +3308,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UM": CountryCode{
-			name:       "United States Minor Outlying Islands",
-			alpha2:     "UM",
-			alpha3:     "UMI",
-			numeric:    581,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "United States Minor Outlying Islands",
+			Alpha2:     "UM",
+			Alpha3:     "UMI",
+			Numeric:    581,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3321,11 +3321,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"US": CountryCode{
-			name:       "United States",
-			alpha2:     "US",
-			alpha3:     "USA",
-			numeric:    840,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "United States",
+			Alpha2:     "US",
+			Alpha3:     "USA",
+			Numeric:    840,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Uruguay">Uruguay</a>
@@ -3333,11 +3333,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UY": CountryCode{
-			name:       "Uruguay",
-			alpha2:     "UY",
-			alpha3:     "URY",
-			numeric:    858,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Uruguay",
+			Alpha2:     "UY",
+			Alpha3:     "URY",
+			Numeric:    858,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3346,11 +3346,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UZ": CountryCode{
-			name:       "Uzbekistan",
-			alpha2:     "UZ",
-			alpha3:     "UZB",
-			numeric:    860,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Uzbekistan",
+			Alpha2:     "UZ",
+			Alpha3:     "UZB",
+			Numeric:    860,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3359,11 +3359,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VA": CountryCode{
-			name:       "Holy See (Vatican City State)",
-			alpha2:     "VA",
-			alpha3:     "VAT",
-			numeric:    336,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Holy See (Vatican City State)",
+			Alpha2:     "VA",
+			Alpha3:     "VAT",
+			Numeric:    336,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3372,11 +3372,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VC": CountryCode{
-			name:       "Saint Vincent and the Grenadines",
-			alpha2:     "VC",
-			alpha3:     "VCT",
-			numeric:    670,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Saint Vincent and the Grenadines",
+			Alpha2:     "VC",
+			Alpha3:     "VCT",
+			Numeric:    670,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3385,11 +3385,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VE": CountryCode{
-			name:       "Venezuela, Bolivarian Republic of",
-			alpha2:     "VE",
-			alpha3:     "VEN",
-			numeric:    862,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Venezuela, Bolivarian Republic of",
+			Alpha2:     "VE",
+			Alpha3:     "VEN",
+			Numeric:    862,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3398,11 +3398,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VG": CountryCode{
-			name:       "Virgin Islands, British",
-			alpha2:     "VG",
-			alpha3:     "VGB",
-			numeric:    92,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Virgin Islands, British",
+			Alpha2:     "VG",
+			Alpha3:     "VGB",
+			Numeric:    92,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3411,11 +3411,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VI": CountryCode{
-			name:       "Virgin Islands, U.S.",
-			alpha2:     "VI",
-			alpha3:     "VIR",
-			numeric:    850,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Virgin Islands, U.S.",
+			Alpha2:     "VI",
+			Alpha3:     "VIR",
+			Numeric:    850,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3424,11 +3424,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VN": CountryCode{
-			name:       "Viet Nam",
-			alpha2:     "VN",
-			alpha3:     "VNM",
-			numeric:    704,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Viet Nam",
+			Alpha2:     "VN",
+			Alpha3:     "VNM",
+			Numeric:    704,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3437,11 +3437,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VU": CountryCode{
-			name:       "Vanuatu",
-			alpha2:     "VU",
-			alpha3:     "VUT",
-			numeric:    548,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Vanuatu",
+			Alpha2:     "VU",
+			Alpha3:     "VUT",
+			Numeric:    548,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3450,11 +3450,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"WF": CountryCode{
-			name:       "Wallis and Futuna",
-			alpha2:     "WF",
-			alpha3:     "WLF",
-			numeric:    876,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Wallis and Futuna",
+			Alpha2:     "WF",
+			Alpha3:     "WLF",
+			Numeric:    876,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3463,11 +3463,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"WS": CountryCode{
-			name:       "Samoa",
-			alpha2:     "WS",
-			alpha3:     "WSM",
-			numeric:    882,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Samoa",
+			Alpha2:     "WS",
+			Alpha3:     "WSM",
+			Numeric:    882,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3476,11 +3476,11 @@ func init() {
 		 * User assigned]
 		 */
 		"XK": CountryCode{
-			name:       "Kosovo, Republic of",
-			alpha2:     "XK",
-			alpha3:     "XXK",
-			numeric:    -1,
-			assignment: USER_ASSIGNED,
+			Name:       "Kosovo, Republic of",
+			Alpha2:     "XK",
+			Alpha3:     "XXK",
+			Numeric:    -1,
+			Assignment: USER_ASSIGNED,
 		},
 
 		/**
@@ -3489,11 +3489,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"YE": CountryCode{
-			name:       "Yemen",
-			alpha2:     "YE",
-			alpha3:     "YEM",
-			numeric:    887,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Yemen",
+			Alpha2:     "YE",
+			Alpha3:     "YEM",
+			Numeric:    887,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3502,11 +3502,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"YT": CountryCode{
-			name:       "Mayotte",
-			alpha2:     "YT",
-			alpha3:     "MYT",
-			numeric:    175,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Mayotte",
+			Alpha2:     "YT",
+			Alpha3:     "MYT",
+			Numeric:    175,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3515,11 +3515,11 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"YU": CountryCode{
-			name:       "Yugoslavia",
-			alpha2:     "YU",
-			alpha3:     "YUCS",
-			numeric:    890,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Yugoslavia",
+			Alpha2:     "YU",
+			Alpha3:     "YUCS",
+			Numeric:    890,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3528,11 +3528,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZA": CountryCode{
-			name:       "South Africa",
-			alpha2:     "ZA",
-			alpha3:     "ZAF",
-			numeric:    710,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "South Africa",
+			Alpha2:     "ZA",
+			Alpha3:     "ZAF",
+			Numeric:    710,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3541,11 +3541,11 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZM": CountryCode{
-			name:       "Zambia",
-			alpha2:     "ZM",
-			alpha3:     "ZMB",
-			numeric:    894,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Zambia",
+			Alpha2:     "ZM",
+			Alpha3:     "ZMB",
+			Numeric:    894,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3558,11 +3558,11 @@ func init() {
 		 * </p>
 		 */
 		"ZR": CountryCode{
-			name:       "Zaire",
-			alpha2:     "ZR",
-			alpha3:     "ZRCD",
-			numeric:    0,
-			assignment: TRANSITIONALLY_RESERVED,
+			Name:       "Zaire",
+			Alpha2:     "ZR",
+			Alpha3:     "ZRCD",
+			Numeric:    0,
+			Assignment: TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3571,40 +3571,40 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZW": CountryCode{
-			name:       "Zimbabwe",
-			alpha2:     "ZW",
-			alpha3:     "ZWE",
-			numeric:    716,
-			assignment: OFFICIALLY_ASSIGNED,
+			Name:       "Zimbabwe",
+			Alpha2:     "ZW",
+			Alpha3:     "ZWE",
+			Numeric:    716,
+			Assignment: OFFICIALLY_ASSIGNED,
 		},
 	}
 
 	for _, cc := range by_alpha2 {
-		if cc.alpha3 != "" {
-			by_alpha3[cc.alpha3] = cc
+		if cc.Alpha3 != "" {
+			by_alpha3[cc.Alpha3] = cc
 		}
-		by_name[cc.name] = cc
-		by_numeric[cc.numeric] = cc
-		name_trie.Insert(patricia.Prefix(cc.name), cc)
+		by_name[cc.Name] = cc
+		by_numeric[cc.Numeric] = cc
+		name_trie.Insert(patricia.Prefix(cc.Name), cc)
 	}
 }
 
 func GetByAlpha2(a2 string) (CountryCode, bool) {
 	code := by_alpha2[a2]
 
-	return code, code.alpha2 != ""
+	return code, code.Alpha2 != ""
 }
 
 func GetByAlpha3(a3 string) (CountryCode, bool) {
 	code := by_alpha3[a3]
 
-	return code, code.alpha2 != ""
+	return code, code.Alpha2 != ""
 }
 
 func GetByName(name string) (CountryCode, bool) {
 	code := by_name[name]
 
-	return code, code.alpha2 != ""
+	return code, code.Alpha2 != ""
 }
 
 func FindByName(prefix string) (matches []CountryCode) {
