@@ -2,6 +2,7 @@ package countrycodes
 
 import (
 	"github.com/tchap/go-patricia/patricia"
+	"strings"
 )
 
 type Assignment int
@@ -3585,7 +3586,7 @@ func init() {
 		}
 		by_name[cc.Name] = cc
 		by_numeric[cc.Numeric] = cc
-		name_trie.Insert(patricia.Prefix(cc.Name), cc)
+		name_trie.Insert(patricia.Prefix(strings.ToLower(cc.Name)), cc)
 	}
 }
 
@@ -3615,7 +3616,7 @@ func FindByName(prefix string) (matches []CountryCode) {
 		return nil
 	}
 
-	name_trie.VisitSubtree(patricia.Prefix(prefix), visit)
+	name_trie.VisitSubtree(patricia.Prefix(strings.ToLower(prefix)), visit)
 
 	return
 }
