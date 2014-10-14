@@ -1,5 +1,9 @@
 package countrycodes
 
+import (
+	"github.com/tchap/go-patricia/patricia"
+)
+
 type Assignment int
 
 const (
@@ -69,11 +73,14 @@ var by_alpha3 map[string]CountryCode
 
 var by_numeric map[int]CountryCode
 
+var name_trie *patricia.Trie
+
 func init() {
 
 	by_name = make(map[string]CountryCode)
 	by_alpha3 = make(map[string]CountryCode)
 	by_numeric = make(map[int]CountryCode)
+	name_trie = patricia.NewTrie()
 
 	by_alpha2 = map[string]CountryCode{
 		/**
@@ -3578,5 +3585,37 @@ func init() {
 		}
 		by_name[cc.name] = cc
 		by_numeric[cc.numeric] = cc
+		name_trie.Insert(patricia.Prefix(cc.name), cc)
 	}
+}
+
+func GetByAlpha2(a2 string) (CountryCode, bool) {
+	code := by_alpha2[a2]
+
+	return code, code.alpha2 != ""
+}
+
+func GetByAlpha3(a3 string) (CountryCode, bool) {
+	code := by_alpha3[a3]
+
+	return code, code.alpha2 != ""
+}
+
+func GetByName(name string) (CountryCode, bool) {
+	code := by_name[name]
+
+	return code, code.alpha2 != ""
+}
+
+func FindByName(prefix string) (matches []CountryCode) {
+	matches = make([]CountryCode, 0)
+
+	visit := func(prefix patricia.Prefix, item patricia.Item) error {
+		matches = append(matches, item.(CountryCode))
+		return nil
+	}
+
+	name_trie.VisitSubtree(patricia.Prefix(prefix), visit)
+
+	return
 }

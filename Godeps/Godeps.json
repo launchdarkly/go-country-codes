@@ -1,0 +1,11 @@
+{
+	"ImportPath": "github.com/launchdarkly/go-country-codes",
+	"GoVersion": "go1.3.3",
+	"Deps": [
+		{
+			"ImportPath": "github.com/tchap/go-patricia/patricia",
+			"Comment": "v1.0.1",
+			"Rev": "f64d0a63cd3363481c898faa9339de04d12213f9"
+		}
+	]
+}
