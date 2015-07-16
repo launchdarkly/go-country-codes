@@ -59,11 +59,12 @@ const (
 )
 
 type CountryCode struct {
-	Name       string
-	Alpha2     string
-	Alpha3     string
-	Numeric    int
-	Assignment Assignment
+	Name        string
+	Alpha2      string
+	Alpha3      string
+	Numeric     int
+	DialingCode string
+	Assignment  Assignment
 }
 
 var by_alpha2 map[string]CountryCode
@@ -90,11 +91,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"AC": CountryCode{
-			Name:       "Ascension Island",
-			Alpha2:     "AC",
-			Alpha3:     "ASC",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Ascension Island",
+			Alpha2:      "AC",
+			Alpha3:      "ASC",
+			Numeric:     -1,
+			DialingCode: "+247",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -103,11 +105,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AD": CountryCode{
-			Name:       "Andorra",
-			Alpha2:     "AD",
-			Alpha3:     "AND",
-			Numeric:    20,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Andorra",
+			Alpha2:      "AD",
+			Alpha3:      "AND",
+			Numeric:     20,
+			DialingCode: "+376",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -116,11 +119,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AE": CountryCode{
-			Name:       "United Arab Emirates",
-			Alpha2:     "AE",
-			Alpha3:     "ARE",
-			Numeric:    784,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "United Arab Emirates",
+			Alpha2:      "AE",
+			Alpha3:      "ARE",
+			Numeric:     784,
+			DialingCode: "+971",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -129,11 +133,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AF": CountryCode{
-			Name:       "Afghanistan",
-			Alpha2:     "AF",
-			Alpha3:     "AFG",
-			Numeric:    4,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Afghanistan",
+			Alpha2:      "AF",
+			Alpha3:      "AFG",
+			Numeric:     4,
+			DialingCode: "+93",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -142,11 +147,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AG": CountryCode{
-			Name:       "Antigua and Barbuda",
-			Alpha2:     "AG",
-			Alpha3:     "ATG",
-			Numeric:    28,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Antigua and Barbuda",
+			Alpha2:      "AG",
+			Alpha3:      "ATG",
+			Numeric:     28,
+			DialingCode: "+1-268",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -155,11 +161,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AI": CountryCode{
-			Name:       "Anguilla",
-			Alpha2:     "AI",
-			Alpha3:     "AIA",
-			Numeric:    660,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Anguilla",
+			Alpha2:      "AI",
+			Alpha3:      "AIA",
+			Numeric:     660,
+			DialingCode: "+1-264",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -168,11 +175,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AL": CountryCode{
-			Name:       "Albania",
-			Alpha2:     "AL",
-			Alpha3:     "ALB",
-			Numeric:    8,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Albania",
+			Alpha2:      "AL",
+			Alpha3:      "ALB",
+			Numeric:     8,
+			DialingCode: "+355",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -181,11 +189,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AM": CountryCode{
-			Name:       "Armenia",
-			Alpha2:     "AM",
-			Alpha3:     "ARM",
-			Numeric:    51,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Armenia",
+			Alpha2:      "AM",
+			Alpha3:      "ARM",
+			Numeric:     51,
+			DialingCode: "+374",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -194,11 +203,12 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"AN": CountryCode{
-			Name:       "Netherlands Antilles",
-			Alpha2:     "AN",
-			Alpha3:     "ANHH",
-			Numeric:    530,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Netherlands Antilles",
+			Alpha2:      "AN",
+			Alpha3:      "ANHH",
+			Numeric:     530,
+			DialingCode: "+599",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -207,11 +217,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AO": CountryCode{
-			Name:       "Angola",
-			Alpha2:     "AO",
-			Alpha3:     "AGO",
-			Numeric:    24,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Angola",
+			Alpha2:      "AO",
+			Alpha3:      "AGO",
+			Numeric:     24,
+			DialingCode: "+244",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -220,11 +231,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AQ": CountryCode{
-			Name:       "Antarctica",
-			Alpha2:     "AQ",
-			Alpha3:     "ATA",
-			Numeric:    10,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Antarctica",
+			Alpha2:      "AQ",
+			Alpha3:      "ATA",
+			Numeric:     10,
+			DialingCode: "+672",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -233,11 +245,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AR": CountryCode{
-			Name:       "Argentina",
-			Alpha2:     "AR",
-			Alpha3:     "ARG",
-			Numeric:    32,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Argentina",
+			Alpha2:      "AR",
+			Alpha3:      "ARG",
+			Numeric:     32,
+			DialingCode: "+54",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -246,11 +259,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AS": CountryCode{
-			Name:       "American Samoa",
-			Alpha2:     "AS",
-			Alpha3:     "ASM",
-			Numeric:    16,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "American Samoa",
+			Alpha2:      "AS",
+			Alpha3:      "ASM",
+			Numeric:     16,
+			DialingCode: "+1-684",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -259,11 +273,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AT": CountryCode{
-			Name:       "Austria",
-			Alpha2:     "AT",
-			Alpha3:     "AUT",
-			Numeric:    40,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Austria",
+			Alpha2:      "AT",
+			Alpha3:      "AUT",
+			Numeric:     40,
+			DialingCode: "+43",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -272,11 +287,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AU": CountryCode{
-			Name:       "Australia",
-			Alpha2:     "AU",
-			Alpha3:     "AUS",
-			Numeric:    36,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Australia",
+			Alpha2:      "AU",
+			Alpha3:      "AUS",
+			Numeric:     36,
+			DialingCode: "+61",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -285,11 +301,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AW": CountryCode{
-			Name:       "Aruba",
-			Alpha2:     "AW",
-			Alpha3:     "ABW",
-			Numeric:    533,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Aruba",
+			Alpha2:      "AW",
+			Alpha3:      "ABW",
+			Numeric:     533,
+			DialingCode: "+297",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -298,11 +315,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AX": CountryCode{
-			Name:       "\u212Bland Islands",
-			Alpha2:     "AX",
-			Alpha3:     "ALA",
-			Numeric:    248,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "\u212Bland Islands",
+			Alpha2:      "AX",
+			Alpha3:      "ALA",
+			Numeric:     248,
+			DialingCode: "",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -311,11 +329,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"AZ": CountryCode{
-			Name:       "Azerbaijan",
-			Alpha2:     "AZ",
-			Alpha3:     "AZE",
-			Numeric:    31,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Azerbaijan",
+			Alpha2:      "AZ",
+			Alpha3:      "AZE",
+			Numeric:     31,
+			DialingCode: "+994",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -324,11 +343,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BA": CountryCode{
-			Name:       "Bosnia and Herzegovina",
-			Alpha2:     "BA",
-			Alpha3:     "BIH",
-			Numeric:    70,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bosnia and Herzegovina",
+			Alpha2:      "BA",
+			Alpha3:      "BIH",
+			Numeric:     70,
+			DialingCode: "+387",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -337,11 +357,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BB": CountryCode{
-			Name:       "Barbados",
-			Alpha2:     "BB",
-			Alpha3:     "BRB",
-			Numeric:    52,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Barbados",
+			Alpha2:      "BB",
+			Alpha3:      "BRB",
+			Numeric:     52,
+			DialingCode: "+1-246",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -350,11 +371,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BD": CountryCode{
-			Name:       "Bangladesh",
-			Alpha2:     "BD",
-			Alpha3:     "BGD",
-			Numeric:    50,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bangladesh",
+			Alpha2:      "BD",
+			Alpha3:      "BGD",
+			Numeric:     50,
+			DialingCode: "+880",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -363,11 +385,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BE": CountryCode{
-			Name:       "Belgium",
-			Alpha2:     "BE",
-			Alpha3:     "BEL",
-			Numeric:    56,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Belgium",
+			Alpha2:      "BE",
+			Alpha3:      "BEL",
+			Numeric:     56,
+			DialingCode: "+32",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -376,11 +399,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BF": CountryCode{
-			Name:       "Burkina Faso",
-			Alpha2:     "BF",
-			Alpha3:     "BFA",
-			Numeric:    854,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Burkina Faso",
+			Alpha2:      "BF",
+			Alpha3:      "BFA",
+			Numeric:     854,
+			DialingCode: "+226",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -389,11 +413,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BG": CountryCode{
-			Name:       "Bulgaria",
-			Alpha2:     "BG",
-			Alpha3:     "BGR",
-			Numeric:    100,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bulgaria",
+			Alpha2:      "BG",
+			Alpha3:      "BGR",
+			Numeric:     100,
+			DialingCode: "+359",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -402,11 +427,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BH": CountryCode{
-			Name:       "Bahrain",
-			Alpha2:     "BH",
-			Alpha3:     "BHR",
-			Numeric:    48,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bahrain",
+			Alpha2:      "BH",
+			Alpha3:      "BHR",
+			Numeric:     48,
+			DialingCode: "+973",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -415,11 +441,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BI": CountryCode{
-			Name:       "Burundi",
-			Alpha2:     "BI",
-			Alpha3:     "BDI",
-			Numeric:    108,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Burundi",
+			Alpha2:      "BI",
+			Alpha3:      "BDI",
+			Numeric:     108,
+			DialingCode: "+257",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -428,11 +455,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BJ": CountryCode{
-			Name:       "Benin",
-			Alpha2:     "BJ",
-			Alpha3:     "BEN",
-			Numeric:    204,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Benin",
+			Alpha2:      "BJ",
+			Alpha3:      "BEN",
+			Numeric:     204,
+			DialingCode: "+229",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -441,11 +469,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BL": CountryCode{
-			Name:       "Saint Barth\u00E9lemy",
-			Alpha2:     "BL",
-			Alpha3:     "BLM",
-			Numeric:    652,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Barth\u00E9lemy",
+			Alpha2:      "BL",
+			Alpha3:      "BLM",
+			Numeric:     652,
+			DialingCode: "+590",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -454,11 +483,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BM": CountryCode{
-			Name:       "Bermuda",
-			Alpha2:     "BM",
-			Alpha3:     "BMU",
-			Numeric:    60,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bermuda",
+			Alpha2:      "BM",
+			Alpha3:      "BMU",
+			Numeric:     60,
+			DialingCode: "+1-441",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -467,11 +497,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BN": CountryCode{
-			Name:       "Brunei Darussalam",
-			Alpha2:     "BN",
-			Alpha3:     "BRN",
-			Numeric:    96,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Brunei Darussalam",
+			Alpha2:      "BN",
+			Alpha3:      "BRN",
+			Numeric:     96,
+			DialingCode: "+673",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -480,11 +511,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BO": CountryCode{
-			Name:       "Bolivia, Plurinational State of",
-			Alpha2:     "BO",
-			Alpha3:     "BOL",
-			Numeric:    68,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bolivia, Plurinational State of",
+			Alpha2:      "BO",
+			Alpha3:      "BOL",
+			Numeric:     68,
+			DialingCode: "+591",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -493,11 +525,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BQ": CountryCode{
-			Name:       "Bonaire, Sint Eustatius and Saba",
-			Alpha2:     "BQ",
-			Alpha3:     "BES",
-			Numeric:    535,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bonaire, Sint Eustatius and Saba",
+			Alpha2:      "BQ",
+			Alpha3:      "BES",
+			Numeric:     535,
+			DialingCode: "+599",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -506,11 +539,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BR": CountryCode{
-			Name:       "Brazil",
-			Alpha2:     "BR",
-			Alpha3:     "BRA",
-			Numeric:    76,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Brazil",
+			Alpha2:      "BR",
+			Alpha3:      "BRA",
+			Numeric:     76,
+			DialingCode: "+55",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -519,11 +553,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BS": CountryCode{
-			Name:       "Bahamas",
-			Alpha2:     "BS",
-			Alpha3:     "BHS",
-			Numeric:    44,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bahamas",
+			Alpha2:      "BS",
+			Alpha3:      "BHS",
+			Numeric:     44,
+			DialingCode: "+1-242",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -532,11 +567,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BT": CountryCode{
-			Name:       "Bhutan",
-			Alpha2:     "BT",
-			Alpha3:     "BTN",
-			Numeric:    64,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bhutan",
+			Alpha2:      "BT",
+			Alpha3:      "BTN",
+			Numeric:     64,
+			DialingCode: "+975",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -547,11 +583,12 @@ func init() {
 		 * @see #MM
 		 */
 		"BU": CountryCode{
-			Name:       "Burma",
-			Alpha2:     "BU",
-			Alpha3:     "BUMM",
-			Numeric:    104,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Burma",
+			Alpha2:      "BU",
+			Alpha3:      "BUMM",
+			Numeric:     104,
+			DialingCode: "+95",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -560,11 +597,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BV": CountryCode{
-			Name:       "Bouvet Island",
-			Alpha2:     "BV",
-			Alpha3:     "BVT",
-			Numeric:    74,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Bouvet Island",
+			Alpha2:      "BV",
+			Alpha3:      "BVT",
+			Numeric:     74,
+			DialingCode: "",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -573,11 +611,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BW": CountryCode{
-			Name:       "Botswana",
-			Alpha2:     "BW",
-			Alpha3:     "BWA",
-			Numeric:    72,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Botswana",
+			Alpha2:      "BW",
+			Alpha3:      "BWA",
+			Numeric:     72,
+			DialingCode: "+267",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -586,11 +625,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BY": CountryCode{
-			Name:       "Belarus",
-			Alpha2:     "BY",
-			Alpha3:     "BLR",
-			Numeric:    112,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Belarus",
+			Alpha2:      "BY",
+			Alpha3:      "BLR",
+			Numeric:     112,
+			DialingCode: "+375",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -599,11 +639,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"BZ": CountryCode{
-			Name:       "Belize",
-			Alpha2:     "BZ",
-			Alpha3:     "BLZ",
-			Numeric:    84,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Belize",
+			Alpha2:      "BZ",
+			Alpha3:      "BLZ",
+			Numeric:     84,
+			DialingCode: "+501",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -612,11 +653,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CA": CountryCode{
-			Name:       "Canada",
-			Alpha2:     "CA",
-			Alpha3:     "CAN",
-			Numeric:    124,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Canada",
+			Alpha2:      "CA",
+			Alpha3:      "CAN",
+			Numeric:     124,
+			DialingCode: "+1",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands">Cocos (Keeling) Islands</a>
@@ -624,11 +666,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CC": CountryCode{
-			Name:       "Cocos (Keeling) Islands",
-			Alpha2:     "CC",
-			Alpha3:     "CCK",
-			Numeric:    166,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cocos (Keeling) Islands",
+			Alpha2:      "CC",
+			Alpha3:      "CCK",
+			Numeric:     166,
+			DialingCode: "+61",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -637,11 +680,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CD": CountryCode{
-			Name:       "Congo, the Democratic Republic of the",
-			Alpha2:     "CD",
-			Alpha3:     "COD",
-			Numeric:    180,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Congo, the Democratic Republic of the",
+			Alpha2:      "CD",
+			Alpha3:      "COD",
+			Numeric:     180,
+			DialingCode: "+243",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -650,11 +694,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CF": CountryCode{
-			Name:       "Central African Republic",
-			Alpha2:     "CF",
-			Alpha3:     "CAF",
-			Numeric:    140,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Central African Republic",
+			Alpha2:      "CF",
+			Alpha3:      "CAF",
+			Numeric:     140,
+			DialingCode: "+236",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -663,11 +708,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CG": CountryCode{
-			Name:       "Congo",
-			Alpha2:     "CG",
-			Alpha3:     "COG",
-			Numeric:    178,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Congo",
+			Alpha2:      "CG",
+			Alpha3:      "COG",
+			Numeric:     178,
+			DialingCode: "+242",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -676,11 +722,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CH": CountryCode{
-			Name:       "Switzerland",
-			Alpha2:     "CH",
-			Alpha3:     "CHE",
-			Numeric:    756,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Switzerland",
+			Alpha2:      "CH",
+			Alpha3:      "CHE",
+			Numeric:     756,
+			DialingCode: "+41",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -689,11 +736,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CI": CountryCode{
-			Name:       "C\u00F4te d'Ivoire",
-			Alpha2:     "CI",
-			Alpha3:     "CIV",
-			Numeric:    384,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "C\u00F4te d'Ivoire",
+			Alpha2:      "CI",
+			Alpha3:      "CIV",
+			Numeric:     384,
+			DialingCode: "+225",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -702,11 +750,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CK": CountryCode{
-			Name:       "Cook Islands",
-			Alpha2:     "CK",
-			Alpha3:     "COK",
-			Numeric:    184,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cook Islands",
+			Alpha2:      "CK",
+			Alpha3:      "COK",
+			Numeric:     184,
+			DialingCode: "+682",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -715,11 +764,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CL": CountryCode{
-			Name:       "Chile",
-			Alpha2:     "CL",
-			Alpha3:     "CHL",
-			Numeric:    152,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Chile",
+			Alpha2:      "CL",
+			Alpha3:      "CHL",
+			Numeric:     152,
+			DialingCode: "+56",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -728,11 +778,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CM": CountryCode{
-			Name:       "Cameroon",
-			Alpha2:     "CM",
-			Alpha3:     "CMR",
-			Numeric:    120,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cameroon",
+			Alpha2:      "CM",
+			Alpha3:      "CMR",
+			Numeric:     120,
+			DialingCode: "+237",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -741,11 +792,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CN": CountryCode{
-			Name:       "China",
-			Alpha2:     "CN",
-			Alpha3:     "CHN",
-			Numeric:    156,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "China",
+			Alpha2:      "CN",
+			Alpha3:      "CHN",
+			Numeric:     156,
+			DialingCode: "+86",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Colombia">Colombia</a>
@@ -753,11 +805,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CO": CountryCode{
-			Name:       "Colombia",
-			Alpha2:     "CO",
-			Alpha3:     "COL",
-			Numeric:    170,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Colombia",
+			Alpha2:      "CO",
+			Alpha3:      "COL",
+			Numeric:     170,
+			DialingCode: "+57",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -766,11 +819,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"CP": CountryCode{
-			Name:       "Clipperton Island",
-			Alpha2:     "CP",
-			Alpha3:     "CPT",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Clipperton Island",
+			Alpha2:      "CP",
+			Alpha3:      "CPT",
+			Numeric:     -1,
+			DialingCode: "",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -779,11 +833,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CR": CountryCode{
-			Name:       "Costa Rica",
-			Alpha2:     "CR",
-			Alpha3:     "CRI",
-			Numeric:    188,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Costa Rica",
+			Alpha2:      "CR",
+			Alpha3:      "CRI",
+			Numeric:     188,
+			DialingCode: "+506",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -792,11 +847,12 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"CS": CountryCode{
-			Name:       "Serbia and Montenegro",
-			Alpha2:     "CS",
-			Alpha3:     "CSXX",
-			Numeric:    891,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Serbia and Montenegro",
+			Alpha2:      "CS",
+			Alpha3:      "CSXX",
+			Numeric:     891,
+			DialingCode: "+381",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -805,11 +861,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CU": CountryCode{
-			Name:       "Cuba",
-			Alpha2:     "CU",
-			Alpha3:     "CUB",
-			Numeric:    192,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cuba",
+			Alpha2:      "CU",
+			Alpha3:      "CUB",
+			Numeric:     192,
+			DialingCode: "+53",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -818,11 +875,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CV": CountryCode{
-			Name:       "Cape Verde",
-			Alpha2:     "CV",
-			Alpha3:     "CPV",
-			Numeric:    132,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cape Verde",
+			Alpha2:      "CV",
+			Alpha3:      "CPV",
+			Numeric:     132,
+			DialingCode: "+238",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -831,11 +889,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CW": CountryCode{
-			Name:       "Cura\u00E7ao",
-			Alpha2:     "CW",
-			Alpha3:     "CUW",
-			Numeric:    531,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cura\u00E7ao",
+			Alpha2:      "CW",
+			Alpha3:      "CUW",
+			Numeric:     531,
+			DialingCode: "+599",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -844,11 +903,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CX": CountryCode{
-			Name:       "Christmas Island",
-			Alpha2:     "CX",
-			Alpha3:     "CXR",
-			Numeric:    162,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Christmas Island",
+			Alpha2:      "CX",
+			Alpha3:      "CXR",
+			Numeric:     162,
+			DialingCode: "+61",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -857,11 +917,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CY": CountryCode{
-			Name:       "Cyprus",
-			Alpha2:     "CY",
-			Alpha3:     "CYP",
-			Numeric:    196,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cyprus",
+			Alpha2:      "CY",
+			Alpha3:      "CYP",
+			Numeric:     196,
+			DialingCode: "+357",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -870,11 +931,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"CZ": CountryCode{
-			Name:       "Czech Republic",
-			Alpha2:     "CZ",
-			Alpha3:     "CZE",
-			Numeric:    203,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Czech Republic",
+			Alpha2:      "CZ",
+			Alpha3:      "CZE",
+			Numeric:     203,
+			DialingCode: "+420",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -883,11 +945,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DE": CountryCode{
-			Name:       "Germany",
-			Alpha2:     "DE",
-			Alpha3:     "DEU",
-			Numeric:    276,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Germany",
+			Alpha2:      "DE",
+			Alpha3:      "DEU",
+			Numeric:     276,
+			DialingCode: "+49",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -896,11 +959,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"DG": CountryCode{
-			Name:       "Diego Garcia",
-			Alpha2:     "DG",
-			Alpha3:     "DGA",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Diego Garcia",
+			Alpha2:      "DG",
+			Alpha3:      "DGA",
+			Numeric:     -1,
+			DialingCode: "+246",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -909,11 +973,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DJ": CountryCode{
-			Name:       "Djibouti",
-			Alpha2:     "DJ",
-			Alpha3:     "DJI",
-			Numeric:    262,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Djibouti",
+			Alpha2:      "DJ",
+			Alpha3:      "DJI",
+			Numeric:     262,
+			DialingCode: "+253",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -922,11 +987,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DK": CountryCode{
-			Name:       "Denmark",
-			Alpha2:     "DK",
-			Alpha3:     "DNK",
-			Numeric:    208,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Denmark",
+			Alpha2:      "DK",
+			Alpha3:      "DNK",
+			Numeric:     208,
+			DialingCode: "+45",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -935,11 +1001,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DM": CountryCode{
-			Name:       "Dominica",
-			Alpha2:     "DM",
-			Alpha3:     "DMA",
-			Numeric:    212,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Dominica",
+			Alpha2:      "DM",
+			Alpha3:      "DMA",
+			Numeric:     212,
+			DialingCode: "+1-767",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -948,11 +1015,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DO": CountryCode{
-			Name:       "Dominican Republic",
-			Alpha2:     "DO",
-			Alpha3:     "DOM",
-			Numeric:    214,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Dominican Republic",
+			Alpha2:      "DO",
+			Alpha3:      "DOM",
+			Numeric:     214,
+			DialingCode: "+1-809, +1-829, +1-849",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -961,11 +1029,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"DZ": CountryCode{
-			Name:       "Algeria",
-			Alpha2:     "DZ",
-			Alpha3:     "DZA",
-			Numeric:    12,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Algeria",
+			Alpha2:      "DZ",
+			Alpha3:      "DZA",
+			Numeric:     12,
+			DialingCode: "+213",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -975,11 +1044,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"EA": CountryCode{
-			Name:       "Ceuta, Melilla",
-			Alpha2:     "EA",
-			Alpha3:     "",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Ceuta, Melilla",
+			Alpha2:      "EA",
+			Alpha3:      "",
+			Numeric:     -1,
+			DialingCode: "",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -988,11 +1058,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EC": CountryCode{
-			Name:       "Ecuador",
-			Alpha2:     "EC",
-			Alpha3:     "ECU",
-			Numeric:    218,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Ecuador",
+			Alpha2:      "EC",
+			Alpha3:      "ECU",
+			Numeric:     218,
+			DialingCode: "+593",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1001,11 +1072,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EE": CountryCode{
-			Name:       "Estonia",
-			Alpha2:     "EE",
-			Alpha3:     "EST",
-			Numeric:    233,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Estonia",
+			Alpha2:      "EE",
+			Alpha3:      "EST",
+			Numeric:     233,
+			DialingCode: "+372",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1014,11 +1086,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EG": CountryCode{
-			Name:       "Egypt",
-			Alpha2:     "EG",
-			Alpha3:     "EGY",
-			Numeric:    818,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Egypt",
+			Alpha2:      "EG",
+			Alpha3:      "EGY",
+			Numeric:     818,
+			DialingCode: "+20",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1027,11 +1100,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"EH": CountryCode{
-			Name:       "Western Sahara",
-			Alpha2:     "EH",
-			Alpha3:     "ESH",
-			Numeric:    732,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Western Sahara",
+			Alpha2:      "EH",
+			Alpha3:      "ESH",
+			Numeric:     732,
+			DialingCode: "+212",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1040,11 +1114,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ER": CountryCode{
-			Name:       "Eritrea",
-			Alpha2:     "ER",
-			Alpha3:     "ERI",
-			Numeric:    232,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Eritrea",
+			Alpha2:      "ER",
+			Alpha3:      "ERI",
+			Numeric:     232,
+			DialingCode: "+291",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1053,11 +1128,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ES": CountryCode{
-			Name:       "Spain",
-			Alpha2:     "ES",
-			Alpha3:     "ESP",
-			Numeric:    724,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Spain",
+			Alpha2:      "ES",
+			Alpha3:      "ESP",
+			Numeric:     724,
+			DialingCode: "+34",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1066,11 +1142,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ET": CountryCode{
-			Name:       "Ethiopia",
-			Alpha2:     "ET",
-			Alpha3:     "ETH",
-			Numeric:    231,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Ethiopia",
+			Alpha2:      "ET",
+			Alpha3:      "ETH",
+			Numeric:     231,
+			DialingCode: "+251",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1079,11 +1156,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"EU": CountryCode{
-			Name:       "European Union",
-			Alpha2:     "EU",
-			Alpha3:     "",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "European Union",
+			Alpha2:      "EU",
+			Alpha3:      "",
+			Numeric:     -1,
+			DialingCode: "",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1094,11 +1172,12 @@ func init() {
 		 * @see #SF
 		 */
 		"FI": CountryCode{
-			Name:       "Finland",
-			Alpha2:     "FI",
-			Alpha3:     "FIN",
-			Numeric:    246,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Finland",
+			Alpha2:      "FI",
+			Alpha3:      "FIN",
+			Numeric:     246,
+			DialingCode: "+358",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1107,11 +1186,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FJ": CountryCode{
-			Name:       "Fiji",
-			Alpha2:     "FJ",
-			Alpha3:     "FJI",
-			Numeric:    242,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Fiji",
+			Alpha2:      "FJ",
+			Alpha3:      "FJI",
+			Numeric:     242,
+			DialingCode: "+679",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1120,11 +1200,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FK": CountryCode{
-			Name:       "Falkland Islands (Malvinas)",
-			Alpha2:     "FK",
-			Alpha3:     "FLK",
-			Numeric:    238,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Falkland Islands (Malvinas)",
+			Alpha2:      "FK",
+			Alpha3:      "FLK",
+			Numeric:     238,
+			DialingCode: "+500",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1133,11 +1214,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FM": CountryCode{
-			Name:       "Micronesia, Federated States of",
-			Alpha2:     "FM",
-			Alpha3:     "FSM",
-			Numeric:    583,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Micronesia, Federated States of",
+			Alpha2:      "FM",
+			Alpha3:      "FSM",
+			Numeric:     583,
+			DialingCode: "+691",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1146,11 +1228,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FO": CountryCode{
-			Name:       "Faroe Islands",
-			Alpha2:     "FO",
-			Alpha3:     "FRO",
-			Numeric:    234,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Faroe Islands",
+			Alpha2:      "FO",
+			Alpha3:      "FRO",
+			Numeric:     234,
+			DialingCode: "+298",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1159,11 +1242,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"FR": CountryCode{
-			Name:       "France",
-			Alpha2:     "FR",
-			Alpha3:     "FRA",
-			Numeric:    250,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "France",
+			Alpha2:      "FR",
+			Alpha3:      "FRA",
+			Numeric:     250,
+			DialingCode: "+33",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1172,11 +1256,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"FX": CountryCode{
-			Name:       "France, Metropolitan",
-			Alpha2:     "FX",
-			Alpha3:     "FXX",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "France, Metropolitan",
+			Alpha2:      "FX",
+			Alpha3:      "FXX",
+			Numeric:     -1,
+			DialingCode: "",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1185,11 +1270,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GA": CountryCode{
-			Name:       "Gabon",
-			Alpha2:     "GA",
-			Alpha3:     "GAB",
-			Numeric:    266,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Gabon",
+			Alpha2:      "GA",
+			Alpha3:      "GAB",
+			Numeric:     266,
+			DialingCode: "+241",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1198,11 +1284,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GB": CountryCode{
-			Name:       "United Kingdom",
-			Alpha2:     "GB",
-			Alpha3:     "GBR",
-			Numeric:    826,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "United Kingdom",
+			Alpha2:      "GB",
+			Alpha3:      "GBR",
+			Numeric:     826,
+			DialingCode: "+44",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1211,11 +1298,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GD": CountryCode{
-			Name:       "Grenada",
-			Alpha2:     "GD",
-			Alpha3:     "GRD",
-			Numeric:    308,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Grenada",
+			Alpha2:      "GD",
+			Alpha3:      "GRD",
+			Numeric:     308,
+			DialingCode: "+1-473",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1224,11 +1312,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GE": CountryCode{
-			Name:       "Georgia",
-			Alpha2:     "GE",
-			Alpha3:     "GEO",
-			Numeric:    268,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Georgia",
+			Alpha2:      "GE",
+			Alpha3:      "GEO",
+			Numeric:     268,
+			DialingCode: "+995",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1237,11 +1326,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GF": CountryCode{
-			Name:       "French Guiana",
-			Alpha2:     "GF",
-			Alpha3:     "GUF",
-			Numeric:    254,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "French Guiana",
+			Alpha2:      "GF",
+			Alpha3:      "GUF",
+			Numeric:     254,
+			DialingCode: "+594",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1250,11 +1340,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GG": CountryCode{
-			Name:       "Guernsey",
-			Alpha2:     "GG",
-			Alpha3:     "GGY",
-			Numeric:    831,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guernsey",
+			Alpha2:      "GG",
+			Alpha3:      "GGY",
+			Numeric:     831,
+			DialingCode: "+44-1481",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1263,11 +1354,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GH": CountryCode{
-			Name:       "Ghana",
-			Alpha2:     "GH",
-			Alpha3:     "GHA",
-			Numeric:    288,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Ghana",
+			Alpha2:      "GH",
+			Alpha3:      "GHA",
+			Numeric:     288,
+			DialingCode: "+233",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1276,11 +1368,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GI": CountryCode{
-			Name:       "Gibraltar",
-			Alpha2:     "GI",
-			Alpha3:     "GIB",
-			Numeric:    292,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Gibraltar",
+			Alpha2:      "GI",
+			Alpha3:      "GIB",
+			Numeric:     292,
+			DialingCode: "+350",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1289,11 +1382,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GL": CountryCode{
-			Name:       "Greenland",
-			Alpha2:     "GL",
-			Alpha3:     "GRL",
-			Numeric:    304,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Greenland",
+			Alpha2:      "GL",
+			Alpha3:      "GRL",
+			Numeric:     304,
+			DialingCode: "+299",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1302,11 +1396,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GM": CountryCode{
-			Name:       "Gambia",
-			Alpha2:     "GM",
-			Alpha3:     "GMB",
-			Numeric:    270,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Gambia",
+			Alpha2:      "GM",
+			Alpha3:      "GMB",
+			Numeric:     270,
+			DialingCode: "+220",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1315,11 +1410,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GN": CountryCode{
-			Name:       "Guinea",
-			Alpha2:     "GN",
-			Alpha3:     "GIN",
-			Numeric:    324,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guinea",
+			Alpha2:      "GN",
+			Alpha3:      "GIN",
+			Numeric:     324,
+			DialingCode: "+224",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1328,11 +1424,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GP": CountryCode{
-			Name:       "Guadeloupe",
-			Alpha2:     "GP",
-			Alpha3:     "GLP",
-			Numeric:    312,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guadeloupe",
+			Alpha2:      "GP",
+			Alpha3:      "GLP",
+			Numeric:     312,
+			DialingCode: "+590",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1341,11 +1438,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GQ": CountryCode{
-			Name:       "Equatorial Guinea",
-			Alpha2:     "GQ",
-			Alpha3:     "GNQ",
-			Numeric:    226,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Equatorial Guinea",
+			Alpha2:      "GQ",
+			Alpha3:      "GNQ",
+			Numeric:     226,
+			DialingCode: "+240",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1354,11 +1452,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GR": CountryCode{
-			Name:       "Greece",
-			Alpha2:     "GR",
-			Alpha3:     "GRC",
-			Numeric:    300,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Greece",
+			Alpha2:      "GR",
+			Alpha3:      "GRC",
+			Numeric:     300,
+			DialingCode: "+30",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1367,11 +1466,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GS": CountryCode{
-			Name:       "South Georgia and the South Sandwich Islands",
-			Alpha2:     "GS",
-			Alpha3:     "SGS",
-			Numeric:    239,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "South Georgia and the South Sandwich Islands",
+			Alpha2:      "GS",
+			Alpha3:      "SGS",
+			Numeric:     239,
+			DialingCode: "+500",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1380,11 +1480,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GT": CountryCode{
-			Name:       "Guatemala",
-			Alpha2:     "GT",
-			Alpha3:     "GTM",
-			Numeric:    320,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guatemala",
+			Alpha2:      "GT",
+			Alpha3:      "GTM",
+			Numeric:     320,
+			DialingCode: "+502",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1393,11 +1494,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GU": CountryCode{
-			Name:       "Guam",
-			Alpha2:     "GU",
-			Alpha3:     "GUM",
-			Numeric:    316,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guam",
+			Alpha2:      "GU",
+			Alpha3:      "GUM",
+			Numeric:     316,
+			DialingCode: "+1-671",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1406,11 +1508,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GW": CountryCode{
-			Name:       "Guinea-Bissau",
-			Alpha2:     "GW",
-			Alpha3:     "GNB",
-			Numeric:    624,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guinea-Bissau",
+			Alpha2:      "GW",
+			Alpha3:      "GNB",
+			Numeric:     624,
+			DialingCode: "+245",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1419,11 +1522,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"GY": CountryCode{
-			Name:       "Guyana",
-			Alpha2:     "GY",
-			Alpha3:     "GUY",
-			Numeric:    328,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Guyana",
+			Alpha2:      "GY",
+			Alpha3:      "GUY",
+			Numeric:     328,
+			DialingCode: "+592",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1432,11 +1536,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HK": CountryCode{
-			Name:       "Hong Kong",
-			Alpha2:     "HK",
-			Alpha3:     "HKG",
-			Numeric:    344,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Hong Kong",
+			Alpha2:      "HK",
+			Alpha3:      "HKG",
+			Numeric:     344,
+			DialingCode: "+852",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1445,11 +1550,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HM": CountryCode{
-			Name:       "Heard Island and McDonald Islands",
-			Alpha2:     "HM",
-			Alpha3:     "HMD",
-			Numeric:    334,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Heard Island and McDonald Islands",
+			Alpha2:      "HM",
+			Alpha3:      "HMD",
+			Numeric:     334,
+			DialingCode: "",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1458,11 +1564,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HN": CountryCode{
-			Name:       "Honduras",
-			Alpha2:     "HN",
-			Alpha3:     "HND",
-			Numeric:    340,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Honduras",
+			Alpha2:      "HN",
+			Alpha3:      "HND",
+			Numeric:     340,
+			DialingCode: "+504",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1471,11 +1578,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HR": CountryCode{
-			Name:       "Croatia",
-			Alpha2:     "HR",
-			Alpha3:     "HRV",
-			Numeric:    191,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Croatia",
+			Alpha2:      "HR",
+			Alpha3:      "HRV",
+			Numeric:     191,
+			DialingCode: "+385",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1484,11 +1592,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HT": CountryCode{
-			Name:       "Haiti",
-			Alpha2:     "HT",
-			Alpha3:     "HTI",
-			Numeric:    332,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Haiti",
+			Alpha2:      "HT",
+			Alpha3:      "HTI",
+			Numeric:     332,
+			DialingCode: "+509",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1497,11 +1606,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"HU": CountryCode{
-			Name:       "Hungary",
-			Alpha2:     "HU",
-			Alpha3:     "HUN",
-			Numeric:    348,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Hungary",
+			Alpha2:      "HU",
+			Alpha3:      "HUN",
+			Numeric:     348,
+			DialingCode: "+36",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1510,11 +1620,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"IC": CountryCode{
-			Name:       "Canary Islands",
-			Alpha2:     "IC",
-			Alpha3:     "",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Canary Islands",
+			Alpha2:      "IC",
+			Alpha3:      "",
+			Numeric:     -1,
+			DialingCode: "",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -1523,11 +1634,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ID": CountryCode{
-			Name:       "Indonesia",
-			Alpha2:     "ID",
-			Alpha3:     "IDN",
-			Numeric:    360,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Indonesia",
+			Alpha2:      "ID",
+			Alpha3:      "IDN",
+			Numeric:     360,
+			DialingCode: "+62",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1536,11 +1648,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IE": CountryCode{
-			Name:       "Ireland",
-			Alpha2:     "IE",
-			Alpha3:     "IRL",
-			Numeric:    372,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Ireland",
+			Alpha2:      "IE",
+			Alpha3:      "IRL",
+			Numeric:     372,
+			DialingCode: "+353",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1549,11 +1662,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IL": CountryCode{
-			Name:       "Israel",
-			Alpha2:     "IL",
-			Alpha3:     "ISR",
-			Numeric:    376,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Israel",
+			Alpha2:      "IL",
+			Alpha3:      "ISR",
+			Numeric:     376,
+			DialingCode: "+972",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1562,11 +1676,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IM": CountryCode{
-			Name:       "Isle of Man",
-			Alpha2:     "IM",
-			Alpha3:     "IMN",
-			Numeric:    833,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Isle of Man",
+			Alpha2:      "IM",
+			Alpha3:      "IMN",
+			Numeric:     833,
+			DialingCode: "+44-1624",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1575,11 +1690,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IN": CountryCode{
-			Name:       "India",
-			Alpha2:     "IN",
-			Alpha3:     "IND",
-			Numeric:    356,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "India",
+			Alpha2:      "IN",
+			Alpha3:      "IND",
+			Numeric:     356,
+			DialingCode: "+91",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1588,11 +1704,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IO": CountryCode{
-			Name:       "British Indian Ocean Territory",
-			Alpha2:     "IO",
-			Alpha3:     "IOT",
-			Numeric:    86,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "British Indian Ocean Territory",
+			Alpha2:      "IO",
+			Alpha3:      "IOT",
+			Numeric:     86,
+			DialingCode: "+246",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1601,11 +1718,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IQ": CountryCode{
-			Name:       "Iraq",
-			Alpha2:     "IQ",
-			Alpha3:     "IRQ",
-			Numeric:    368,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Iraq",
+			Alpha2:      "IQ",
+			Alpha3:      "IRQ",
+			Numeric:     368,
+			DialingCode: "+964",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1614,11 +1732,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IR": CountryCode{
-			Name:       "Iran, Islamic Republic of",
-			Alpha2:     "IR",
-			Alpha3:     "IRN",
-			Numeric:    364,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Iran, Islamic Republic of",
+			Alpha2:      "IR",
+			Alpha3:      "IRN",
+			Numeric:     364,
+			DialingCode: "+98",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1627,11 +1746,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IS": CountryCode{
-			Name:       "Iceland",
-			Alpha2:     "IS",
-			Alpha3:     "ISL",
-			Numeric:    352,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Iceland",
+			Alpha2:      "IS",
+			Alpha3:      "ISL",
+			Numeric:     352,
+			DialingCode: "+354",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1640,11 +1760,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"IT": CountryCode{
-			Name:       "Italy",
-			Alpha2:     "IT",
-			Alpha3:     "ITA",
-			Numeric:    380,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Italy",
+			Alpha2:      "IT",
+			Alpha3:      "ITA",
+			Numeric:     380,
+			DialingCode: "+39",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Jersey">Jersey</a>
@@ -1652,11 +1773,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JE": CountryCode{
-			Name:       "Jersey",
-			Alpha2:     "JE",
-			Alpha3:     "JEY",
-			Numeric:    832,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Jersey",
+			Alpha2:      "JE",
+			Alpha3:      "JEY",
+			Numeric:     832,
+			DialingCode: "+44-1534",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1665,11 +1787,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JM": CountryCode{
-			Name:       "Jamaica",
-			Alpha2:     "JM",
-			Alpha3:     "JAM",
-			Numeric:    388,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Jamaica",
+			Alpha2:      "JM",
+			Alpha3:      "JAM",
+			Numeric:     388,
+			DialingCode: "+1-876",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1678,11 +1801,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JO": CountryCode{
-			Name:       "Jordan",
-			Alpha2:     "JO",
-			Alpha3:     "JOR",
-			Numeric:    400,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Jordan",
+			Alpha2:      "JO",
+			Alpha3:      "JOR",
+			Numeric:     400,
+			DialingCode: "+962",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1691,11 +1815,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"JP": CountryCode{
-			Name:       "Japan",
-			Alpha2:     "JP",
-			Alpha3:     "JPN",
-			Numeric:    392,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Japan",
+			Alpha2:      "JP",
+			Alpha3:      "JPN",
+			Numeric:     392,
+			DialingCode: "+81",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Kenya">Kenya</a>
@@ -1703,11 +1828,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KE": CountryCode{
-			Name:       "Kenya",
-			Alpha2:     "KE",
-			Alpha3:     "KEN",
-			Numeric:    404,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Kenya",
+			Alpha2:      "KE",
+			Alpha3:      "KEN",
+			Numeric:     404,
+			DialingCode: "+254",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1716,11 +1842,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KG": CountryCode{
-			Name:       "Kyrgyzstan",
-			Alpha2:     "KG",
-			Alpha3:     "KGZ",
-			Numeric:    417,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Kyrgyzstan",
+			Alpha2:      "KG",
+			Alpha3:      "KGZ",
+			Numeric:     417,
+			DialingCode: "+996",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1729,11 +1856,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KH": CountryCode{
-			Name:       "Cambodia",
-			Alpha2:     "KH",
-			Alpha3:     "KHM",
-			Numeric:    116,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cambodia",
+			Alpha2:      "KH",
+			Alpha3:      "KHM",
+			Numeric:     116,
+			DialingCode: "+855",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1742,11 +1870,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KI": CountryCode{
-			Name:       "Kiribati",
-			Alpha2:     "KI",
-			Alpha3:     "KIR",
-			Numeric:    296,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Kiribati",
+			Alpha2:      "KI",
+			Alpha3:      "KIR",
+			Numeric:     296,
+			DialingCode: "+686",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1755,11 +1884,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KM": CountryCode{
-			Name:       "Comoros",
-			Alpha2:     "KM",
-			Alpha3:     "COM",
-			Numeric:    174,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Comoros",
+			Alpha2:      "KM",
+			Alpha3:      "COM",
+			Numeric:     174,
+			DialingCode: "+269",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1768,11 +1898,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KN": CountryCode{
-			Name:       "Saint Kitts and Nevis",
-			Alpha2:     "KN",
-			Alpha3:     "KNA",
-			Numeric:    659,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Kitts and Nevis",
+			Alpha2:      "KN",
+			Alpha3:      "KNA",
+			Numeric:     659,
+			DialingCode: "+1-869",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1781,11 +1912,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KP": CountryCode{
-			Name:       "Korea, Democratic People's Republic of",
-			Alpha2:     "KP",
-			Alpha3:     "PRK",
-			Numeric:    408,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Korea, Democratic People's Republic of",
+			Alpha2:      "KP",
+			Alpha3:      "PRK",
+			Numeric:     408,
+			DialingCode: "+850",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1794,11 +1926,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KR": CountryCode{
-			Name:       "Korea, Republic of",
-			Alpha2:     "KR",
-			Alpha3:     "KOR",
-			Numeric:    410,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Korea, Republic of",
+			Alpha2:      "KR",
+			Alpha3:      "KOR",
+			Numeric:     410,
+			DialingCode: "+82",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1807,11 +1940,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KW": CountryCode{
-			Name:       "Kuwait",
-			Alpha2:     "KW",
-			Alpha3:     "KWT",
-			Numeric:    414,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Kuwait",
+			Alpha2:      "KW",
+			Alpha3:      "KWT",
+			Numeric:     414,
+			DialingCode: "+965",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1820,11 +1954,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KY": CountryCode{
-			Name:       "Cayman Islands",
-			Alpha2:     "KY",
-			Alpha3:     "CYM",
-			Numeric:    136,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Cayman Islands",
+			Alpha2:      "KY",
+			Alpha3:      "CYM",
+			Numeric:     136,
+			DialingCode: "+1-345",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1833,11 +1968,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"KZ": CountryCode{
-			Name:       "Kazakhstan",
-			Alpha2:     "KZ",
-			Alpha3:     "KAZ",
-			Numeric:    398,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Kazakhstan",
+			Alpha2:      "KZ",
+			Alpha3:      "KAZ",
+			Numeric:     398,
+			DialingCode: "+7",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1846,11 +1982,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LA": CountryCode{
-			Name:       "Lao People's Democratic Republic",
-			Alpha2:     "LA",
-			Alpha3:     "LAO",
-			Numeric:    418,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Lao People's Democratic Republic",
+			Alpha2:      "LA",
+			Alpha3:      "LAO",
+			Numeric:     418,
+			DialingCode: "+856",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1859,11 +1996,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LB": CountryCode{
-			Name:       "Lebanon",
-			Alpha2:     "LB",
-			Alpha3:     "LBN",
-			Numeric:    422,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Lebanon",
+			Alpha2:      "LB",
+			Alpha3:      "LBN",
+			Numeric:     422,
+			DialingCode: "+961",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1872,11 +2010,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LC": CountryCode{
-			Name:       "Saint Lucia",
-			Alpha2:     "LC",
-			Alpha3:     "LCA",
-			Numeric:    662,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Lucia",
+			Alpha2:      "LC",
+			Alpha3:      "LCA",
+			Numeric:     662,
+			DialingCode: "+1-758",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1885,11 +2024,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LI": CountryCode{
-			Name:       "Liechtenstein",
-			Alpha2:     "LI",
-			Alpha3:     "LIE",
-			Numeric:    438,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Liechtenstein",
+			Alpha2:      "LI",
+			Alpha3:      "LIE",
+			Numeric:     438,
+			DialingCode: "+423",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1898,11 +2038,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LK": CountryCode{
-			Name:       "Sri Lanka",
-			Alpha2:     "LK",
-			Alpha3:     "LKA",
-			Numeric:    144,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sri Lanka",
+			Alpha2:      "LK",
+			Alpha3:      "LKA",
+			Numeric:     144,
+			DialingCode: "+94",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1911,11 +2052,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LR": CountryCode{
-			Name:       "Liberia",
-			Alpha2:     "LR",
-			Alpha3:     "LBR",
-			Numeric:    430,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Liberia",
+			Alpha2:      "LR",
+			Alpha3:      "LBR",
+			Numeric:     430,
+			DialingCode: "+231",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1924,11 +2066,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LS": CountryCode{
-			Name:       "Lesotho",
-			Alpha2:     "LS",
-			Alpha3:     "LSO",
-			Numeric:    426,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Lesotho",
+			Alpha2:      "LS",
+			Alpha3:      "LSO",
+			Numeric:     426,
+			DialingCode: "+266",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1937,11 +2080,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LT": CountryCode{
-			Name:       "Lithuania",
-			Alpha2:     "LT",
-			Alpha3:     "LTU",
-			Numeric:    440,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Lithuania",
+			Alpha2:      "LT",
+			Alpha3:      "LTU",
+			Numeric:     440,
+			DialingCode: "+370",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1950,11 +2094,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LU": CountryCode{
-			Name:       "Luxembourg",
-			Alpha2:     "LU",
-			Alpha3:     "LUX",
-			Numeric:    442,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Luxembourg",
+			Alpha2:      "LU",
+			Alpha3:      "LUX",
+			Numeric:     442,
+			DialingCode: "+352",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1963,11 +2108,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LV": CountryCode{
-			Name:       "Latvia",
-			Alpha2:     "LV",
-			Alpha3:     "LVA",
-			Numeric:    428,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Latvia",
+			Alpha2:      "LV",
+			Alpha3:      "LVA",
+			Numeric:     428,
+			DialingCode: "+371",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1976,11 +2122,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"LY": CountryCode{
-			Name:       "Libya",
-			Alpha2:     "LY",
-			Alpha3:     "LBY",
-			Numeric:    434,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Libya",
+			Alpha2:      "LY",
+			Alpha3:      "LBY",
+			Numeric:     434,
+			DialingCode: "+218",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -1989,11 +2136,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MA": CountryCode{
-			Name:       "Morocco",
-			Alpha2:     "MA",
-			Alpha3:     "MAR",
-			Numeric:    504,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Morocco",
+			Alpha2:      "MA",
+			Alpha3:      "MAR",
+			Numeric:     504,
+			DialingCode: "+212",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2002,11 +2150,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MC": CountryCode{
-			Name:       "Monaco",
-			Alpha2:     "MC",
-			Alpha3:     "MCO",
-			Numeric:    492,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Monaco",
+			Alpha2:      "MC",
+			Alpha3:      "MCO",
+			Numeric:     492,
+			DialingCode: "+377",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2015,11 +2164,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MD": CountryCode{
-			Name:       "Moldova, Republic of",
-			Alpha2:     "MD",
-			Alpha3:     "MDA",
-			Numeric:    498,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Moldova, Republic of",
+			Alpha2:      "MD",
+			Alpha3:      "MDA",
+			Numeric:     498,
+			DialingCode: "+373",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2028,11 +2178,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ME": CountryCode{
-			Name:       "Montenegro",
-			Alpha2:     "ME",
-			Alpha3:     "MNE",
-			Numeric:    499,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Montenegro",
+			Alpha2:      "ME",
+			Alpha3:      "MNE",
+			Numeric:     499,
+			DialingCode: "+382",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2041,11 +2192,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MF": CountryCode{
-			Name:       "Saint Martin (French part)",
-			Alpha2:     "MF",
-			Alpha3:     "MAF",
-			Numeric:    663,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Martin (French part)",
+			Alpha2:      "MF",
+			Alpha3:      "MAF",
+			Numeric:     663,
+			DialingCode: "+590",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2054,11 +2206,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MG": CountryCode{
-			Name:       "Madagascar",
-			Alpha2:     "MG",
-			Alpha3:     "MDG",
-			Numeric:    450,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Madagascar",
+			Alpha2:      "MG",
+			Alpha3:      "MDG",
+			Numeric:     450,
+			DialingCode: "+261",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2067,11 +2220,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MH": CountryCode{
-			Name:       "Marshall Islands",
-			Alpha2:     "MH",
-			Alpha3:     "MHL",
-			Numeric:    584,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Marshall Islands",
+			Alpha2:      "MH",
+			Alpha3:      "MHL",
+			Numeric:     584,
+			DialingCode: "+692",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2080,11 +2234,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MK": CountryCode{
-			Name:       "Macedonia, the former Yugoslav Republic of",
-			Alpha2:     "MK",
-			Alpha3:     "MKD",
-			Numeric:    807,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Macedonia, the former Yugoslav Republic of",
+			Alpha2:      "MK",
+			Alpha3:      "MKD",
+			Numeric:     807,
+			DialingCode: "+389",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2093,11 +2248,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ML": CountryCode{
-			Name:       "Mali",
-			Alpha2:     "ML",
-			Alpha3:     "MLI",
-			Numeric:    466,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mali",
+			Alpha2:      "ML",
+			Alpha3:      "MLI",
+			Numeric:     466,
+			DialingCode: "+223",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2108,11 +2264,12 @@ func init() {
 		 * @see #BU
 		 */
 		"MM": CountryCode{
-			Name:       "Myanmar",
-			Alpha2:     "MM",
-			Alpha3:     "MMR",
-			Numeric:    104,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Myanmar",
+			Alpha2:      "MM",
+			Alpha3:      "MMR",
+			Numeric:     104,
+			DialingCode: "+95",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2121,11 +2278,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MN": CountryCode{
-			Name:       "Mongolia",
-			Alpha2:     "MN",
-			Alpha3:     "MNG",
-			Numeric:    496,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mongolia",
+			Alpha2:      "MN",
+			Alpha3:      "MNG",
+			Numeric:     496,
+			DialingCode: "+976",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2134,11 +2292,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MO": CountryCode{
-			Name:       "Macao",
-			Alpha2:     "MO",
-			Alpha3:     "MAC",
-			Numeric:    446,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Macao",
+			Alpha2:      "MO",
+			Alpha3:      "MAC",
+			Numeric:     446,
+			DialingCode: "+853",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2147,11 +2306,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MP": CountryCode{
-			Name:       "Northern Mariana Islands",
-			Alpha2:     "MP",
-			Alpha3:     "MNP",
-			Numeric:    580,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Northern Mariana Islands",
+			Alpha2:      "MP",
+			Alpha3:      "MNP",
+			Numeric:     580,
+			DialingCode: "+1-670",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2160,11 +2320,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MQ": CountryCode{
-			Name:       "Martinique",
-			Alpha2:     "MQ",
-			Alpha3:     "MTQ",
-			Numeric:    474,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Martinique",
+			Alpha2:      "MQ",
+			Alpha3:      "MTQ",
+			Numeric:     474,
+			DialingCode: "+596",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2173,11 +2334,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MR": CountryCode{
-			Name:       "Mauritania",
-			Alpha2:     "MR",
-			Alpha3:     "MRT",
-			Numeric:    478,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mauritania",
+			Alpha2:      "MR",
+			Alpha3:      "MRT",
+			Numeric:     478,
+			DialingCode: "+222",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2186,11 +2348,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MS": CountryCode{
-			Name:       "Montserrat",
-			Alpha2:     "MS",
-			Alpha3:     "MSR",
-			Numeric:    500,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Montserrat",
+			Alpha2:      "MS",
+			Alpha3:      "MSR",
+			Numeric:     500,
+			DialingCode: "+1-664",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2199,11 +2362,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MT": CountryCode{
-			Name:       "Malta",
-			Alpha2:     "MT",
-			Alpha3:     "MLT",
-			Numeric:    470,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Malta",
+			Alpha2:      "MT",
+			Alpha3:      "MLT",
+			Numeric:     470,
+			DialingCode: "+356",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2212,11 +2376,12 @@ func init() {
 		 * Officially assigned]]
 		 */
 		"MU": CountryCode{
-			Name:       "Mauritius",
-			Alpha2:     "MU",
-			Alpha3:     "MUS",
-			Numeric:    480,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mauritius",
+			Alpha2:      "MU",
+			Alpha3:      "MUS",
+			Numeric:     480,
+			DialingCode: "+230",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2225,11 +2390,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MV": CountryCode{
-			Name:       "Maldives",
-			Alpha2:     "MV",
-			Alpha3:     "MDV",
-			Numeric:    462,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Maldives",
+			Alpha2:      "MV",
+			Alpha3:      "MDV",
+			Numeric:     462,
+			DialingCode: "+960",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2238,11 +2404,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MW": CountryCode{
-			Name:       "Malawi",
-			Alpha2:     "MW",
-			Alpha3:     "MWI",
-			Numeric:    454,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Malawi",
+			Alpha2:      "MW",
+			Alpha3:      "MWI",
+			Numeric:     454,
+			DialingCode: "+265",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2251,11 +2418,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MX": CountryCode{
-			Name:       "Mexico",
-			Alpha2:     "MX",
-			Alpha3:     "MEX",
-			Numeric:    484,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mexico",
+			Alpha2:      "MX",
+			Alpha3:      "MEX",
+			Numeric:     484,
+			DialingCode: "+52",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2264,11 +2432,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MY": CountryCode{
-			Name:       "Malaysia",
-			Alpha2:     "MY",
-			Alpha3:     "MYS",
-			Numeric:    458,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Malaysia",
+			Alpha2:      "MY",
+			Alpha3:      "MYS",
+			Numeric:     458,
+			DialingCode: "+60",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2277,11 +2446,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"MZ": CountryCode{
-			Name:       "Mozambique",
-			Alpha2:     "MZ",
-			Alpha3:     "MOZ",
-			Numeric:    508,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mozambique",
+			Alpha2:      "MZ",
+			Alpha3:      "MOZ",
+			Numeric:     508,
+			DialingCode: "+258",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2290,11 +2460,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NA": CountryCode{
-			Name:       "Namibia",
-			Alpha2:     "NA",
-			Alpha3:     "NAM",
-			Numeric:    516,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Namibia",
+			Alpha2:      "NA",
+			Alpha3:      "NAM",
+			Numeric:     516,
+			DialingCode: "+264",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2303,11 +2474,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NC": CountryCode{
-			Name:       "New Caledonia",
-			Alpha2:     "NC",
-			Alpha3:     "NCL",
-			Numeric:    540,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "New Caledonia",
+			Alpha2:      "NC",
+			Alpha3:      "NCL",
+			Numeric:     540,
+			DialingCode: "+687",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2316,11 +2488,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NE": CountryCode{
-			Name:       "Niger",
-			Alpha2:     "NE",
-			Alpha3:     "NER",
-			Numeric:    562,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Niger",
+			Alpha2:      "NE",
+			Alpha3:      "NER",
+			Numeric:     562,
+			DialingCode: "+227",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2329,11 +2502,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NF": CountryCode{
-			Name:       "Norfolk Island",
-			Alpha2:     "NF",
-			Alpha3:     "NFK",
-			Numeric:    574,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Norfolk Island",
+			Alpha2:      "NF",
+			Alpha3:      "NFK",
+			Numeric:     574,
+			DialingCode: "+672",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2342,11 +2516,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NG": CountryCode{
-			Name:       "Nigera",
-			Alpha2:     "NG",
-			Alpha3:     "NGA",
-			Numeric:    566,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Nigeria",
+			Alpha2:      "NG",
+			Alpha3:      "NGA",
+			Numeric:     566,
+			DialingCode: "+234",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2355,11 +2530,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NI": CountryCode{
-			Name:       "Nicaragua",
-			Alpha2:     "NI",
-			Alpha3:     "NIC",
-			Numeric:    558,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Nicaragua",
+			Alpha2:      "NI",
+			Alpha3:      "NIC",
+			Numeric:     558,
+			DialingCode: "+505",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2368,11 +2544,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NL": CountryCode{
-			Name:       "Netherlands",
-			Alpha2:     "NL",
-			Alpha3:     "NLD",
-			Numeric:    528,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Netherlands",
+			Alpha2:      "NL",
+			Alpha3:      "NLD",
+			Numeric:     528,
+			DialingCode: "+31",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2381,11 +2558,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NO": CountryCode{
-			Name:       "Norway",
-			Alpha2:     "NO",
-			Alpha3:     "NOR",
-			Numeric:    578,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Norway",
+			Alpha2:      "NO",
+			Alpha3:      "NOR",
+			Numeric:     578,
+			DialingCode: "+47",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2394,11 +2572,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NP": CountryCode{
-			Name:       "Nepal",
-			Alpha2:     "NP",
-			Alpha3:     "NPL",
-			Numeric:    524,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Nepal",
+			Alpha2:      "NP",
+			Alpha3:      "NPL",
+			Numeric:     524,
+			DialingCode: "+977",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2407,11 +2586,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NR": CountryCode{
-			Name:       "Nauru",
-			Alpha2:     "NR",
-			Alpha3:     "NRU",
-			Numeric:    520,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Nauru",
+			Alpha2:      "NR",
+			Alpha3:      "NRU",
+			Numeric:     520,
+			DialingCode: "+674",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2420,11 +2600,12 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"NT": CountryCode{
-			Name:       "Neutral Zone",
-			Alpha2:     "NT",
-			Alpha3:     "NTHH",
-			Numeric:    536,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Neutral Zone",
+			Alpha2:      "NT",
+			Alpha3:      "NTHH",
+			Numeric:     536,
+			DialingCode: "",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -2433,11 +2614,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NU": CountryCode{
-			Name:       "Niue",
-			Alpha2:     "NU",
-			Alpha3:     "NIU",
-			Numeric:    570,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Niue",
+			Alpha2:      "NU",
+			Alpha3:      "NIU",
+			Numeric:     570,
+			DialingCode: "+683",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2446,11 +2628,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"NZ": CountryCode{
-			Name:       "New Zealand",
-			Alpha2:     "NZ",
-			Alpha3:     "NZL",
-			Numeric:    554,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "New Zealand",
+			Alpha2:      "NZ",
+			Alpha3:      "NZL",
+			Numeric:     554,
+			DialingCode: "+64",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2459,11 +2642,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"OM": CountryCode{
-			Name:       "Oman",
-			Alpha2:     "OM",
-			Alpha3:     "OMN",
-			Numeric:    512,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Oman",
+			Alpha2:      "OM",
+			Alpha3:      "OMN",
+			Numeric:     512,
+			DialingCode: "+968",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2472,11 +2656,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PA": CountryCode{
-			Name:       "Panama",
-			Alpha2:     "PA",
-			Alpha3:     "PAN",
-			Numeric:    591,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Panama",
+			Alpha2:      "PA",
+			Alpha3:      "PAN",
+			Numeric:     591,
+			DialingCode: "+507",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2485,11 +2670,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PE": CountryCode{
-			Name:       "Peru",
-			Alpha2:     "PE",
-			Alpha3:     "PER",
-			Numeric:    604,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Peru",
+			Alpha2:      "PE",
+			Alpha3:      "PER",
+			Numeric:     604,
+			DialingCode: "+51",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2498,11 +2684,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PF": CountryCode{
-			Name:       "French Polynesia",
-			Alpha2:     "PF",
-			Alpha3:     "PYF",
-			Numeric:    258,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "French Polynesia",
+			Alpha2:      "PF",
+			Alpha3:      "PYF",
+			Numeric:     258,
+			DialingCode: "+689",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2511,11 +2698,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PG": CountryCode{
-			Name:       "Papua New Guinea",
-			Alpha2:     "PG",
-			Alpha3:     "PNG",
-			Numeric:    598,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Papua New Guinea",
+			Alpha2:      "PG",
+			Alpha3:      "PNG",
+			Numeric:     598,
+			DialingCode: "+675",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2524,11 +2712,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PH": CountryCode{
-			Name:       "Philippines",
-			Alpha2:     "PH",
-			Alpha3:     "PHL",
-			Numeric:    608,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Philippines",
+			Alpha2:      "PH",
+			Alpha3:      "PHL",
+			Numeric:     608,
+			DialingCode: "+63",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2537,11 +2726,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PK": CountryCode{
-			Name:       "Pakistan",
-			Alpha2:     "PK",
-			Alpha3:     "PAK",
-			Numeric:    586,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Pakistan",
+			Alpha2:      "PK",
+			Alpha3:      "PAK",
+			Numeric:     586,
+			DialingCode: "+92",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2550,11 +2740,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PL": CountryCode{
-			Name:       "Poland",
-			Alpha2:     "PL",
-			Alpha3:     "POL",
-			Numeric:    616,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Poland",
+			Alpha2:      "PL",
+			Alpha3:      "POL",
+			Numeric:     616,
+			DialingCode: "+48",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2563,11 +2754,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PM": CountryCode{
-			Name:       "Saint Pierre and Miquelon",
-			Alpha2:     "PM",
-			Alpha3:     "SPM",
-			Numeric:    666,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Pierre and Miquelon",
+			Alpha2:      "PM",
+			Alpha3:      "SPM",
+			Numeric:     666,
+			DialingCode: "+508",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2576,11 +2768,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PN": CountryCode{
-			Name:       "Pitcairn",
-			Alpha2:     "PN",
-			Alpha3:     "PCN",
-			Numeric:    612,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Pitcairn",
+			Alpha2:      "PN",
+			Alpha3:      "PCN",
+			Numeric:     612,
+			DialingCode: "+64",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2589,11 +2782,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PR": CountryCode{
-			Name:       "Puerto Rico",
-			Alpha2:     "PR",
-			Alpha3:     "PRI",
-			Numeric:    630,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Puerto Rico",
+			Alpha2:      "PR",
+			Alpha3:      "PRI",
+			Numeric:     630,
+			DialingCode: "+1-787, +1-939",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2602,11 +2796,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PS": CountryCode{
-			Name:       "Palestine, State of",
-			Alpha2:     "PS",
-			Alpha3:     "PSE",
-			Numeric:    275,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Palestine, State of",
+			Alpha2:      "PS",
+			Alpha3:      "PSE",
+			Numeric:     275,
+			DialingCode: "+970",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2615,11 +2810,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PT": CountryCode{
-			Name:       "Portugal",
-			Alpha2:     "PT",
-			Alpha3:     "PRT",
-			Numeric:    620,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Portugal",
+			Alpha2:      "PT",
+			Alpha3:      "PRT",
+			Numeric:     620,
+			DialingCode: "+351",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2628,11 +2824,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PW": CountryCode{
-			Name:       "Palau",
-			Alpha2:     "PW",
-			Alpha3:     "PLW",
-			Numeric:    585,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Palau",
+			Alpha2:      "PW",
+			Alpha3:      "PLW",
+			Numeric:     585,
+			DialingCode: "+680",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2641,11 +2838,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"PY": CountryCode{
-			Name:       "Paraguay",
-			Alpha2:     "PY",
-			Alpha3:     "PRY",
-			Numeric:    600,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Paraguay",
+			Alpha2:      "PY",
+			Alpha3:      "PRY",
+			Numeric:     600,
+			DialingCode: "+595",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2654,11 +2852,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"QA": CountryCode{
-			Name:       "Qatar",
-			Alpha2:     "QA",
-			Alpha3:     "QAT",
-			Numeric:    634,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Qatar",
+			Alpha2:      "QA",
+			Alpha3:      "QAT",
+			Numeric:     634,
+			DialingCode: "+974",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2667,11 +2866,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RE": CountryCode{
-			Name:       "R\u00E9union",
-			Alpha2:     "RE",
-			Alpha3:     "REU",
-			Numeric:    638,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "R\u00E9union",
+			Alpha2:      "RE",
+			Alpha3:      "REU",
+			Numeric:     638,
+			DialingCode: "+262",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2680,11 +2880,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RO": CountryCode{
-			Name:       "Romania",
-			Alpha2:     "RO",
-			Alpha3:     "ROU",
-			Numeric:    642,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Romania",
+			Alpha2:      "RO",
+			Alpha3:      "ROU",
+			Numeric:     642,
+			DialingCode: "+40",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2693,11 +2894,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RS": CountryCode{
-			Name:       "Serbia",
-			Alpha2:     "RS",
-			Alpha3:     "SRB",
-			Numeric:    688,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Serbia",
+			Alpha2:      "RS",
+			Alpha3:      "SRB",
+			Numeric:     688,
+			DialingCode: "+381",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2706,11 +2908,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RU": CountryCode{
-			Name:       "Russian Federation",
-			Alpha2:     "RU",
-			Alpha3:     "RUS",
-			Numeric:    643,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Russian Federation",
+			Alpha2:      "RU",
+			Alpha3:      "RUS",
+			Numeric:     643,
+			DialingCode: "+7",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2719,11 +2922,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"RW": CountryCode{
-			Name:       "Rwanda",
-			Alpha2:     "RW",
-			Alpha3:     "RWA",
-			Numeric:    646,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Rwanda",
+			Alpha2:      "RW",
+			Alpha3:      "RWA",
+			Numeric:     646,
+			DialingCode: "+250",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2732,11 +2936,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SA": CountryCode{
-			Name:       "Saudi Arabia",
-			Alpha2:     "SA",
-			Alpha3:     "SAU",
-			Numeric:    682,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saudi Arabia",
+			Alpha2:      "SA",
+			Alpha3:      "SAU",
+			Numeric:     682,
+			DialingCode: "+966",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2745,11 +2950,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SB": CountryCode{
-			Name:       "Solomon Islands",
-			Alpha2:     "SB",
-			Alpha3:     "SLB",
-			Numeric:    90,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Solomon Islands",
+			Alpha2:      "SB",
+			Alpha3:      "SLB",
+			Numeric:     90,
+			DialingCode: "+677",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2758,11 +2964,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SC": CountryCode{
-			Name:       "Seychelles",
-			Alpha2:     "SC",
-			Alpha3:     "SYC",
-			Numeric:    690,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Seychelles",
+			Alpha2:      "SC",
+			Alpha3:      "SYC",
+			Numeric:     690,
+			DialingCode: "+248",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2771,11 +2978,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SD": CountryCode{
-			Name:       "Sudan",
-			Alpha2:     "SD",
-			Alpha3:     "SDN",
-			Numeric:    729,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sudan",
+			Alpha2:      "SD",
+			Alpha3:      "SDN",
+			Numeric:     729,
+			DialingCode: "+249",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2784,11 +2992,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SE": CountryCode{
-			Name:       "Sweden",
-			Alpha2:     "SE",
-			Alpha3:     "SWE",
-			Numeric:    752,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sweden",
+			Alpha2:      "SE",
+			Alpha3:      "SWE",
+			Numeric:     752,
+			DialingCode: "+46",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2799,11 +3008,12 @@ func init() {
 		 * @see #FI
 		 */
 		"SF": CountryCode{
-			Name:       "Finland",
-			Alpha2:     "SF",
-			Alpha3:     "FIN",
-			Numeric:    246,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Finland",
+			Alpha2:      "SF",
+			Alpha3:      "FIN",
+			Numeric:     246,
+			DialingCode: "+358",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -2812,11 +3022,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SG": CountryCode{
-			Name:       "Singapore",
-			Alpha2:     "SG",
-			Alpha3:     "SGP",
-			Numeric:    702,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Singapore",
+			Alpha2:      "SG",
+			Alpha3:      "SGP",
+			Numeric:     702,
+			DialingCode: "+65",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2825,11 +3036,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SH": CountryCode{
-			Name:       "Saint Helena, Ascension and Tristan da Cunha",
-			Alpha2:     "SH",
-			Alpha3:     "SHN",
-			Numeric:    654,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Helena, Ascension and Tristan da Cunha",
+			Alpha2:      "SH",
+			Alpha3:      "SHN",
+			Numeric:     654,
+			DialingCode: "+290",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2838,11 +3050,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SI": CountryCode{
-			Name:       "Slovenia",
-			Alpha2:     "SI",
-			Alpha3:     "SVN",
-			Numeric:    705,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Slovenia",
+			Alpha2:      "SI",
+			Alpha3:      "SVN",
+			Numeric:     705,
+			DialingCode: "+386",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2851,11 +3064,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SJ": CountryCode{
-			Name:       "Svalbard and Jan Mayen",
-			Alpha2:     "SJ",
-			Alpha3:     "SJM",
-			Numeric:    744,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Svalbard and Jan Mayen",
+			Alpha2:      "SJ",
+			Alpha3:      "SJM",
+			Numeric:     744,
+			DialingCode: "+47",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2864,11 +3078,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SK": CountryCode{
-			Name:       "Slovakia",
-			Alpha2:     "SK",
-			Alpha3:     "SVK",
-			Numeric:    703,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Slovakia",
+			Alpha2:      "SK",
+			Alpha3:      "SVK",
+			Numeric:     703,
+			DialingCode: "+421",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2877,11 +3092,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SL": CountryCode{
-			Name:       "Sierra Leone",
-			Alpha2:     "SL",
-			Alpha3:     "SLE",
-			Numeric:    694,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sierra Leone",
+			Alpha2:      "SL",
+			Alpha3:      "SLE",
+			Numeric:     694,
+			DialingCode: "+232",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2890,11 +3106,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SM": CountryCode{
-			Name:       "San Marino",
-			Alpha2:     "SM",
-			Alpha3:     "SMR",
-			Numeric:    674,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "San Marino",
+			Alpha2:      "SM",
+			Alpha3:      "SMR",
+			Numeric:     674,
+			DialingCode: "+378",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2903,11 +3120,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SN": CountryCode{
-			Name:       "Senegal",
-			Alpha2:     "SN",
-			Alpha3:     "SEN",
-			Numeric:    686,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Senegal",
+			Alpha2:      "SN",
+			Alpha3:      "SEN",
+			Numeric:     686,
+			DialingCode: "+221",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2916,11 +3134,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SO": CountryCode{
-			Name:       "Somalia",
-			Alpha2:     "SO",
-			Alpha3:     "SOM",
-			Numeric:    706,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Somalia",
+			Alpha2:      "SO",
+			Alpha3:      "SOM",
+			Numeric:     706,
+			DialingCode: "+252",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2929,11 +3148,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SR": CountryCode{
-			Name:       "Suriname",
-			Alpha2:     "SR",
-			Alpha3:     "SUR",
-			Numeric:    740,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Suriname",
+			Alpha2:      "SR",
+			Alpha3:      "SUR",
+			Numeric:     740,
+			DialingCode: "+597",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2942,11 +3162,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SS": CountryCode{
-			Name:       "South Sudan",
-			Alpha2:     "SS",
-			Alpha3:     "SSD",
-			Numeric:    728,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "South Sudan",
+			Alpha2:      "SS",
+			Alpha3:      "SSD",
+			Numeric:     728,
+			DialingCode: "+211",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2955,11 +3176,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ST": CountryCode{
-			Name:       "Sao Tome and Principe",
-			Alpha2:     "ST",
-			Alpha3:     "STP",
-			Numeric:    678,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sao Tome and Principe",
+			Alpha2:      "ST",
+			Alpha3:      "STP",
+			Numeric:     678,
+			DialingCode: "+239",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2968,11 +3190,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"SU": CountryCode{
-			Name:       "USSR",
-			Alpha2:     "SU",
-			Alpha3:     "SUN",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "USSR",
+			Alpha2:      "SU",
+			Alpha3:      "SUN",
+			Numeric:     -1,
+			DialingCode: "+7",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -2981,11 +3204,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SV": CountryCode{
-			Name:       "El Salvador",
-			Alpha2:     "SV",
-			Alpha3:     "SLV",
-			Numeric:    222,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "El Salvador",
+			Alpha2:      "SV",
+			Alpha3:      "SLV",
+			Numeric:     222,
+			DialingCode: "+503",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -2994,11 +3218,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SX": CountryCode{
-			Name:       "Sint Maarten (Dutch part)",
-			Alpha2:     "SX",
-			Alpha3:     "SXM",
-			Numeric:    534,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Sint Maarten (Dutch part)",
+			Alpha2:      "SX",
+			Alpha3:      "SXM",
+			Numeric:     534,
+			DialingCode: "+1-721",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3007,11 +3232,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SY": CountryCode{
-			Name:       "Syrian Arab Republic",
-			Alpha2:     "SY",
-			Alpha3:     "SYR",
-			Numeric:    760,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Syrian Arab Republic",
+			Alpha2:      "SY",
+			Alpha3:      "SYR",
+			Numeric:     760,
+			DialingCode: "+963",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3020,11 +3246,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"SZ": CountryCode{
-			Name:       "Swaziland",
-			Alpha2:     "SZ",
-			Alpha3:     "SWZ",
-			Numeric:    748,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Swaziland",
+			Alpha2:      "SZ",
+			Alpha3:      "SWZ",
+			Numeric:     748,
+			DialingCode: "+268",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3033,11 +3260,12 @@ func init() {
 		 * Exceptionally reserved.
 		 */
 		"TA": CountryCode{
-			Name:       "Tristan da Cunha",
-			Alpha2:     "TA",
-			Alpha3:     "TAA",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "Tristan da Cunha",
+			Alpha2:      "TA",
+			Alpha3:      "TAA",
+			Numeric:     -1,
+			DialingCode: "+290-8",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 
 		/**
@@ -3046,11 +3274,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TC": CountryCode{
-			Name:       "Turks and Caicos Islands",
-			Alpha2:     "TC",
-			Alpha3:     "TCA",
-			Numeric:    796,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Turks and Caicos Islands",
+			Alpha2:      "TC",
+			Alpha3:      "TCA",
+			Numeric:     796,
+			DialingCode: "+1-649",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3059,11 +3288,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TD": CountryCode{
-			Name:       "Chad",
-			Alpha2:     "TD",
-			Alpha3:     "TCD",
-			Numeric:    148,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Chad",
+			Alpha2:      "TD",
+			Alpha3:      "TCD",
+			Numeric:     148,
+			DialingCode: "+235",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3072,11 +3302,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TF": CountryCode{
-			Name:       "French Southern Territories",
-			Alpha2:     "TF",
-			Alpha3:     "ATF",
-			Numeric:    260,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "French Southern Territories",
+			Alpha2:      "TF",
+			Alpha3:      "ATF",
+			Numeric:     260,
+			DialingCode: "",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3085,11 +3316,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TG": CountryCode{
-			Name:       "Togo",
-			Alpha2:     "TG",
-			Alpha3:     "TGO",
-			Numeric:    768,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Togo",
+			Alpha2:      "TG",
+			Alpha3:      "TGO",
+			Numeric:     768,
+			DialingCode: "228",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3098,11 +3330,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TH": CountryCode{
-			Name:       "Thailand",
-			Alpha2:     "TH",
-			Alpha3:     "THA",
-			Numeric:    764,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Thailand",
+			Alpha2:      "TH",
+			Alpha3:      "THA",
+			Numeric:     764,
+			DialingCode: "+66",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3111,11 +3344,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TJ": CountryCode{
-			Name:       "Tajikistan",
-			Alpha2:     "TJ",
-			Alpha3:     "TJK",
-			Numeric:    762,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tajikistan",
+			Alpha2:      "TJ",
+			Alpha3:      "TJK",
+			Numeric:     762,
+			DialingCode: "+992",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3124,11 +3358,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TK": CountryCode{
-			Name:       "Tokelau",
-			Alpha2:     "TK",
-			Alpha3:     "TKL",
-			Numeric:    772,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tokelau",
+			Alpha2:      "TK",
+			Alpha3:      "TKL",
+			Numeric:     772,
+			DialingCode: "+690",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3137,11 +3372,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TL": CountryCode{
-			Name:       "Timor-Leste",
-			Alpha2:     "TL",
-			Alpha3:     "TLS",
-			Numeric:    626,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Timor-Leste",
+			Alpha2:      "TL",
+			Alpha3:      "TLS",
+			Numeric:     626,
+			DialingCode: "+670",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3150,11 +3386,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TM": CountryCode{
-			Name:       "Turkmenistan",
-			Alpha2:     "TM",
-			Alpha3:     "TKM",
-			Numeric:    795,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Turkmenistan",
+			Alpha2:      "TM",
+			Alpha3:      "TKM",
+			Numeric:     795,
+			DialingCode: "+993",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3163,11 +3400,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TN": CountryCode{
-			Name:       "Tunisia",
-			Alpha2:     "TN",
-			Alpha3:     "TUN",
-			Numeric:    788,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tunisia",
+			Alpha2:      "TN",
+			Alpha3:      "TUN",
+			Numeric:     788,
+			DialingCode: "+216",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3176,11 +3414,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TO": CountryCode{
-			Name:       "Tonga",
-			Alpha2:     "TO",
-			Alpha3:     "TON",
-			Numeric:    776,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tonga",
+			Alpha2:      "TO",
+			Alpha3:      "TON",
+			Numeric:     776,
+			DialingCode: "+676",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3193,11 +3432,12 @@ func init() {
 		 * </p>
 		 */
 		"TP": CountryCode{
-			Name:       "East Timor",
-			Alpha2:     "TP",
-			Alpha3:     "TPTL",
-			Numeric:    0,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "East Timor",
+			Alpha2:      "TP",
+			Alpha3:      "TPTL",
+			Numeric:     0,
+			DialingCode: "+670",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3206,11 +3446,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TR": CountryCode{
-			Name:       "Turkey",
-			Alpha2:     "TR",
-			Alpha3:     "TUR",
-			Numeric:    792,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Turkey",
+			Alpha2:      "TR",
+			Alpha3:      "TUR",
+			Numeric:     792,
+			DialingCode: "+90",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3219,11 +3460,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TT": CountryCode{
-			Name:       "Trinidad and Tobago",
-			Alpha2:     "TT",
-			Alpha3:     "TTO",
-			Numeric:    780,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Trinidad and Tobago",
+			Alpha2:      "TT",
+			Alpha3:      "TTO",
+			Numeric:     780,
+			DialingCode: "+1-868",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3232,11 +3474,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TV": CountryCode{
-			Name:       "Tuvalu",
-			Alpha2:     "TV",
-			Alpha3:     "TUV",
-			Numeric:    798,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tuvalu",
+			Alpha2:      "TV",
+			Alpha3:      "TUV",
+			Numeric:     798,
+			DialingCode: "+688",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3245,11 +3488,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TW": CountryCode{
-			Name:       "Taiwan, Province of China",
-			Alpha2:     "TW",
-			Alpha3:     "TWN",
-			Numeric:    158,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Taiwan, Province of China",
+			Alpha2:      "TW",
+			Alpha3:      "TWN",
+			Numeric:     158,
+			DialingCode: "+886",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3258,11 +3502,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"TZ": CountryCode{
-			Name:       "Tanzania, United Republic of",
-			Alpha2:     "TZ",
-			Alpha3:     "TZA",
-			Numeric:    834,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Tanzania, United Republic of",
+			Alpha2:      "TZ",
+			Alpha3:      "TZA",
+			Numeric:     834,
+			DialingCode: "+255",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3271,11 +3516,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UA": CountryCode{
-			Name:       "Ukraine",
-			Alpha2:     "UA",
-			Alpha3:     "UKR",
-			Numeric:    804,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Ukraine",
+			Alpha2:      "UA",
+			Alpha3:      "UKR",
+			Numeric:     804,
+			DialingCode: "+380",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3284,11 +3530,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UG": CountryCode{
-			Name:       "Uganda",
-			Alpha2:     "UG",
-			Alpha3:     "UGA",
-			Numeric:    800,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Uganda",
+			Alpha2:      "UG",
+			Alpha3:      "UGA",
+			Numeric:     800,
+			DialingCode: "+256",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3297,11 +3544,12 @@ func init() {
 		 * Exceptionally reserved]
 		 */
 		"UK": CountryCode{
-			Name:       "United Kingdom",
-			Alpha2:     "UK",
-			Alpha3:     "",
-			Numeric:    -1,
-			Assignment: EXCEPTIONALLY_RESERVED,
+			Name:        "United Kingdom",
+			Alpha2:      "UK",
+			Alpha3:      "",
+			Numeric:     -1,
+			DialingCode: "+44",
+			Assignment:  EXCEPTIONALLY_RESERVED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands">United States Minor Outlying Islands</a>
@@ -3309,11 +3557,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UM": CountryCode{
-			Name:       "United States Minor Outlying Islands",
-			Alpha2:     "UM",
-			Alpha3:     "UMI",
-			Numeric:    581,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "United States Minor Outlying Islands",
+			Alpha2:      "UM",
+			Alpha3:      "UMI",
+			Numeric:     581,
+			DialingCode: "+1",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3322,11 +3571,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"US": CountryCode{
-			Name:       "United States",
-			Alpha2:     "US",
-			Alpha3:     "USA",
-			Numeric:    840,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "United States",
+			Alpha2:      "US",
+			Alpha3:      "USA",
+			Numeric:     840,
+			DialingCode: "+1",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 		/**
 		 * <a href="http://en.wikipedia.org/wiki/Uruguay">Uruguay</a>
@@ -3334,11 +3584,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UY": CountryCode{
-			Name:       "Uruguay",
-			Alpha2:     "UY",
-			Alpha3:     "URY",
-			Numeric:    858,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Uruguay",
+			Alpha2:      "UY",
+			Alpha3:      "URY",
+			Numeric:     858,
+			DialingCode: "+598",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3347,11 +3598,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"UZ": CountryCode{
-			Name:       "Uzbekistan",
-			Alpha2:     "UZ",
-			Alpha3:     "UZB",
-			Numeric:    860,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Uzbekistan",
+			Alpha2:      "UZ",
+			Alpha3:      "UZB",
+			Numeric:     860,
+			DialingCode: "+998",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3360,11 +3612,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VA": CountryCode{
-			Name:       "Holy See (Vatican City State)",
-			Alpha2:     "VA",
-			Alpha3:     "VAT",
-			Numeric:    336,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Holy See (Vatican City State)",
+			Alpha2:      "VA",
+			Alpha3:      "VAT",
+			Numeric:     336,
+			DialingCode: "+379",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3373,11 +3626,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VC": CountryCode{
-			Name:       "Saint Vincent and the Grenadines",
-			Alpha2:     "VC",
-			Alpha3:     "VCT",
-			Numeric:    670,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Saint Vincent and the Grenadines",
+			Alpha2:      "VC",
+			Alpha3:      "VCT",
+			Numeric:     670,
+			DialingCode: "+1-784",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3386,10 +3640,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VE": CountryCode{
-			Name:       "Venezuela, Bolivarian Republic of",
-			Alpha2:     "VE",
-			Alpha3:     "VEN",
-			Numeric:    862,
+			Name:        "Venezuela, Bolivarian Republic of",
+			Alpha2:      "VE",
+			Alpha3:      "VEN",
+			Numeric:     862,
+			DialingCode: "+58",
+
 			Assignment: OFFICIALLY_ASSIGNED,
 		},
 
@@ -3399,11 +3655,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VG": CountryCode{
-			Name:       "Virgin Islands, British",
-			Alpha2:     "VG",
-			Alpha3:     "VGB",
-			Numeric:    92,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Virgin Islands, British",
+			Alpha2:      "VG",
+			Alpha3:      "VGB",
+			Numeric:     92,
+			DialingCode: "+1-284",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3412,11 +3669,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VI": CountryCode{
-			Name:       "Virgin Islands, U.S.",
-			Alpha2:     "VI",
-			Alpha3:     "VIR",
-			Numeric:    850,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Virgin Islands, U.S.",
+			Alpha2:      "VI",
+			Alpha3:      "VIR",
+			Numeric:     850,
+			DialingCode: "+1-340",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3425,11 +3683,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VN": CountryCode{
-			Name:       "Viet Nam",
-			Alpha2:     "VN",
-			Alpha3:     "VNM",
-			Numeric:    704,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Viet Nam",
+			Alpha2:      "VN",
+			Alpha3:      "VNM",
+			Numeric:     704,
+			DialingCode: "+84",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3438,11 +3697,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"VU": CountryCode{
-			Name:       "Vanuatu",
-			Alpha2:     "VU",
-			Alpha3:     "VUT",
-			Numeric:    548,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Vanuatu",
+			Alpha2:      "VU",
+			Alpha3:      "VUT",
+			Numeric:     548,
+			DialingCode: "+678",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3451,11 +3711,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"WF": CountryCode{
-			Name:       "Wallis and Futuna",
-			Alpha2:     "WF",
-			Alpha3:     "WLF",
-			Numeric:    876,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Wallis and Futuna",
+			Alpha2:      "WF",
+			Alpha3:      "WLF",
+			Numeric:     876,
+			DialingCode: "+681",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3464,11 +3725,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"WS": CountryCode{
-			Name:       "Samoa",
-			Alpha2:     "WS",
-			Alpha3:     "WSM",
-			Numeric:    882,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Samoa",
+			Alpha2:      "WS",
+			Alpha3:      "WSM",
+			Numeric:     882,
+			DialingCode: "+685",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3477,11 +3739,12 @@ func init() {
 		 * User assigned]
 		 */
 		"XK": CountryCode{
-			Name:       "Kosovo, Republic of",
-			Alpha2:     "XK",
-			Alpha3:     "XXK",
-			Numeric:    -1,
-			Assignment: USER_ASSIGNED,
+			Name:        "Kosovo, Republic of",
+			Alpha2:      "XK",
+			Alpha3:      "XXK",
+			Numeric:     -1,
+			DialingCode: "+383",
+			Assignment:  USER_ASSIGNED,
 		},
 
 		/**
@@ -3490,11 +3753,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"YE": CountryCode{
-			Name:       "Yemen",
-			Alpha2:     "YE",
-			Alpha3:     "YEM",
-			Numeric:    887,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Yemen",
+			Alpha2:      "YE",
+			Alpha3:      "YEM",
+			Numeric:     887,
+			DialingCode: "+967",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3503,11 +3767,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"YT": CountryCode{
-			Name:       "Mayotte",
-			Alpha2:     "YT",
-			Alpha3:     "MYT",
-			Numeric:    175,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Mayotte",
+			Alpha2:      "YT",
+			Alpha3:      "MYT",
+			Numeric:     175,
+			DialingCode: "+262",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3516,11 +3781,12 @@ func init() {
 		 * Traditionally reserved]
 		 */
 		"YU": CountryCode{
-			Name:       "Yugoslavia",
-			Alpha2:     "YU",
-			Alpha3:     "YUCS",
-			Numeric:    890,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Yugoslavia",
+			Alpha2:      "YU",
+			Alpha3:      "YUCS",
+			Numeric:     890,
+			DialingCode: "+38",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3529,11 +3795,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZA": CountryCode{
-			Name:       "South Africa",
-			Alpha2:     "ZA",
-			Alpha3:     "ZAF",
-			Numeric:    710,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "South Africa",
+			Alpha2:      "ZA",
+			Alpha3:      "ZAF",
+			Numeric:     710,
+			DialingCode: "+27",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3542,11 +3809,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZM": CountryCode{
-			Name:       "Zambia",
-			Alpha2:     "ZM",
-			Alpha3:     "ZMB",
-			Numeric:    894,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Zambia",
+			Alpha2:      "ZM",
+			Alpha3:      "ZMB",
+			Numeric:     894,
+			DialingCode: "+260",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 
 		/**
@@ -3559,11 +3827,12 @@ func init() {
 		 * </p>
 		 */
 		"ZR": CountryCode{
-			Name:       "Zaire",
-			Alpha2:     "ZR",
-			Alpha3:     "ZRCD",
-			Numeric:    0,
-			Assignment: TRANSITIONALLY_RESERVED,
+			Name:        "Zaire",
+			Alpha2:      "ZR",
+			Alpha3:      "ZRCD",
+			Numeric:     0,
+			DialingCode: "+243",
+			Assignment:  TRANSITIONALLY_RESERVED,
 		},
 
 		/**
@@ -3572,11 +3841,12 @@ func init() {
 		 * Officially assigned]
 		 */
 		"ZW": CountryCode{
-			Name:       "Zimbabwe",
-			Alpha2:     "ZW",
-			Alpha3:     "ZWE",
-			Numeric:    716,
-			Assignment: OFFICIALLY_ASSIGNED,
+			Name:        "Zimbabwe",
+			Alpha2:      "ZW",
+			Alpha3:      "ZWE",
+			Numeric:     716,
+			DialingCode: "+263",
+			Assignment:  OFFICIALLY_ASSIGNED,
 		},
 	}
 
