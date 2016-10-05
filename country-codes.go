@@ -3878,6 +3878,12 @@ func GetByName(name string) (CountryCode, bool) {
 	return code, code.Alpha2 != ""
 }
 
+func GetByNumeric(numeric int) (CountryCode, bool) {
+	code := by_numeric[numeric]
+
+	return code, code.Alpha2 != ""
+}
+
 func FindByName(prefix string) (matches []CountryCode) {
 	matches = make([]CountryCode, 0)
 
