@@ -17,3 +17,11 @@ func TestFindByName(t *testing.T) {
 		t.Fatalf("Match for United States Minor Outlying Islands failed")
 	}
 }
+
+func TestGetByNumeric(t *testing.T) {
+	code, _ := GetByNumeric(840)
+
+	if code.Name != "United States" {
+		t.Fatalf("GetByNumeric failed")
+	}
+}
